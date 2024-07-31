@@ -12,10 +12,11 @@
         </div>
         <div class="paragraph-wrapper">
             <h4>Pesan dan Order Cepat dengan Layanan Terbaik dari kami</h4>
-            <p>Lokasi kami : Kp. rt003/001, Desa karang Haur, Kec pebayuran,Kab Bekasi</p>
+            <p>Lokasi kami : Kp. rt003/001, Desa karang Haur, Kec Pebayuran, Kab Bekasi</p>
         </div>
         <div class="cta-wrapper">
-            <a href="#">
+            <a  href="https://wa.me/6285692435389?text=Assalamualaikum%20Emak.%20Sebelum%20pesan%20saya%20mau%20tanya%20tanya%20donk%20Mak
+            " target="_blank">
                 <button>Chat Via Whatsaap</button>
             </a>
         </div>

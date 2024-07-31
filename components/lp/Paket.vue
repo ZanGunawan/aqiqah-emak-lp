@@ -20,10 +20,10 @@
                             <p>{{ value }}</p>
                         </div>
                     </div>
-                    <a href="#">
+                    <a target="_blank" href="https://wa.me/6285692435389?text=Assalamualaikum%20Emak.%20Sebelum%20pesan%20saya%20mau%20tanya%20tanya%20donk%20Mak">
                         <button>
                             <img src="~/assets/images/chat-circle-green.png" alt="">
-                            Yuk Diorder Sekarang
+                            Tanya ke CS yuk
                         </button>
                     </a>
                 </div>
@@ -57,24 +57,24 @@
             return {
                 paket: [
                     {
-                        headline: 'Paket Hemat 😊 ',
+                        headline: 'Paket Hemat',
                         image: '/images/paket.jpeg',
                         benefits: [
-                            'Box Bento', 'Nasih Putih', 'Olahan Daging', 'Fruit Tea', 'Mix Vegetables', 'Alat Makan', 'Kerupuk Ikan', 'Kartu Ucapan', 'Plastik'
+                            'Box Bento', 'Nasih Putih', 'Menu 1', 'Menu 2', 'Mix Vegetables', 'Kerupuk', 'Fruit Tea', 'Alat Makan'
                         ]
                     },
                     {
-                        headline: 'Paket Hemat 😁 ',
+                        headline: 'Paket Lengkap',
                         image: '/images/paket.jpeg',
                         benefits: [
-                            'Box Bento', 'Nasih Putih', 'Olahan Daging', 'Fruit Tea', 'Mix Vegetables', 'Alat Makan', 'Kerupuk Ikan', 'Kartu Ucapan', 'Plastik'
+                            'Box Bento', 'Nasi Putih', 'Telur Pindang', 'Bihun Cabe Hijau', 'Menu 1', 'Menu 2', 'Mix Vegetables', 'Kerupuk', 'Fruit Tea', 'Alat Makan'
                         ]
                     },
                     {
-                        headline: 'Paket Hemat 😉 ',
+                        headline: 'Paket Premium',
                         image: '/images/paket.jpeg',
                         benefits: [
-                            'Box Bento', 'Nasih Putih', 'Olahan Daging', 'Fruit Tea', 'Mix Vegetables', 'Alat Makan', 'Kerupuk Ikan', 'Kartu Ucapan', 'Plastik'
+                            'Box Bento', 'Nasi Putih', 'Ayam Bakar', 'Bihun Cabe Hijau', 'Menu 1', 'Menu 2', 'Mix Vegetables', 'Kerupuk', 'Fruit Tea', 'Alat Makan'
                         ]
                     },
                 ]

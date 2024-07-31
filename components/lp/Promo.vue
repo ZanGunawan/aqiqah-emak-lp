@@ -12,7 +12,8 @@
             <img src="~/assets/images/poster-promo.jpg" alt="">
         </div>
         <div class="cta-wrapper">
-            <a href="#">
+            <a href="https://wa.me/6285692435389?text=Assalamualaikum%20Emak.%20Sebelum%20pesan%20saya%20mau%20tanya%20tanya%20donk%20Mak
+                " target="_blank">
                 <button>Ambil Promonya Sekarang</button>
             </a>
         </div>

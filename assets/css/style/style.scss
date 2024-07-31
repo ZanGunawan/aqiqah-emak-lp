@@ -220,6 +220,7 @@
     border-radius: 30px;
     overflow: hidden;
     padding-bottom: 20px;
+    overflow: hidden;
     position: relative;
 
     .container-headline {
@@ -270,15 +271,23 @@
     }
 
     .container-benefit {
+        padding-inline: 20px;
         padding-top: 30px;
 
         .box-benefit {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            flex-direction: column;
-            margin-bottom: 45px;
-            gap: 20px;
+            // display: flex;
+            // justify-content: center;
+            // align-items: center;
+            // flex-direction: column;
+            margin-bottom: 35px;
+            // gap: 20px;
+
+            img {
+                max-width: 100%;
+                height: auto;
+                border-radius: 20px;
+                box-shadow: 0px 0px 14px #75757592;
+            }
 
             h3 {
                 font-weight: 800;
@@ -388,12 +397,12 @@
                     display: flex;
                     flex-wrap: wrap;
                     gap: 15px;
-                    margin-bottom: 25px;
+                    margin-bottom: 15px;
 
                     .list-wrapper__text {
                         display: flex;
                         align-items: center;
-                        gap: 4px;
+                        gap: 3px;
 
                         p {
                             font-weight: 500;
@@ -507,7 +516,7 @@
 
 #price {
     padding-top: 30px;
-    padding-bottom: 15px;
+    padding-bottom: 30px;
     background: #fff;
     margin-top: -20px;
     position: relative;
@@ -532,6 +541,31 @@
             border-radius: 20px;
             margin-bottom: 30px;
             box-shadow: 0 0 20px #54545453;
+        }
+    }
+
+    .cta-wrapper {
+        padding-inline: 20px;
+
+        a {
+            button {
+                width: 100%;
+                border-radius: 20px;
+                padding: 18px 26px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                gap: 10px;
+                border: 0;
+                background: var(--bacgroundPrimary);
+                color: #fff;
+                font-weight: 800;
+                font-size: 18px;
+
+                &:hover {
+                    background: #065a29;
+                }
+            }
         }
     }
 }
