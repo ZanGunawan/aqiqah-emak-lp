@@ -1,12 +1,12 @@
 <template>
     <section id="why">
         <div class="headline-wrapper">
-            <img src="~/assets/images/orang-mikir.png" alt="">
+            <img src="~/assets/images/orang-mikir.png" alt="aqiqah bekasi">
             <h2>Mengapa Memilih Aqiqah Emak?</h2>
         </div>
         <div class="container-box">
             <div v-for="(data, index) in datas" :key="index" class="box-wrapper">
-                <img src="~/assets/images/checklist-circle.png" alt="">
+                <img src="~/assets/images/checklist-circle.png" alt="aqiqah bekasi">
                 <h3>{{ data.headline }}</h3>
                 <p>{{ data.paragraf }}</p>
             </div>

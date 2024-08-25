@@ -20,18 +20,38 @@ export default {
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
       { rel: 'stylesheet', href: 'https://fonts.googleapis.com/icon?family=Material+Icons' },
-    ]
+      { href: "https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css", rel: "stylesheet" },
+    ],
+    // analitycs
+    script: [
+      {
+        src: `https://www.googletagmanager.com/gtag/js?id=G-B2EG0K9KJP`,
+        async: true,
+      },
+
+      // ganti GA_MEASUREMENT_ID dengan ID dari analytics
+      {
+        innerHTML: `
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-B2EG0K9KJP');
+      `,
+        type: "text/javascript",
+        charset: "utf-8",
+      },
+    ],
   },
 
   // Global CSS: https://go.nuxtjs.dev/config-css
   css: [
     'bootstrap/dist/css/bootstrap.css',
-    '~/assets/css/style/style.css'
   ],
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
   plugins: [
     { src: '~/plugins/bootstrap.js', mode: 'client' },
+    { src: '~/plugins/meta-pixel.js', mode: 'client' },
   ],
 
   // Auto import components: https://go.nuxtjs.dev/config-components
@@ -39,6 +59,7 @@ export default {
     dirs: [
       '~/components',
       '~/components/lp',
+      '~/components/variansatu',
     ]
   },
 

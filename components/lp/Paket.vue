@@ -1,8 +1,8 @@
 <template>
     <section id="paket">
         <div class="speaker-wrapper">
-            <img src="~/assets/images/speaker-kiri.png" alt="">
-            <img src="~/assets/images/speaker-kanan.png" alt="">
+            <img src="~/assets/images/speaker-kiri.png" alt="paket aqiqah emak">
+            <img src="~/assets/images/speaker-kanan.png" alt="paket aqiqah emak">
         </div>
         <div class="text-wrapper">
             <h2>Pilihan Paket Terbaik</h2>
@@ -10,7 +10,7 @@
         <div class="container-box">
             <div class="box-wrapper" v-for="(data, index) in paket" :key="index">
                 <div class="box-wrapper__image">
-                    <img :src="data.image" alt="">
+                    <img :src="data.image" alt="paket aqiqah emak">
                 </div>
                 <div class="box-wrapper__text">
                     <h2>{{ data.headline }}</h2>
@@ -22,7 +22,7 @@
                     </div>
                     <a target="_blank" href="https://wa.me/6285692435389?text=Assalamualaikum%20Emak.%20Sebelum%20pesan%20saya%20mau%20tanya%20tanya%20donk%20Mak">
                         <button>
-                            <img src="~/assets/images/chat-circle-green.png" alt="">
+                            <img src="~/assets/images/chat-circle-green.png" alt="paket aqiqah emak">
                             Tanya ke CS yuk
                         </button>
                     </a>
@@ -42,11 +42,11 @@
             <p>Buruan ambil promo sekarang</p>
         </div>
         <div class="muka-kambing">
-            <img src="~/assets/images/muka-kambing.png" class="muka-kambing mt-5 mb-n3" alt="">
+            <img src="~/assets/images/muka-kambing.png" class="muka-kambing mt-5 mb-n3" alt="paket aqiqah emak">
         </div>
         <div class="sky d-flex justify-content-between align-items-center position-relative">
-            <img src="~/assets/images/awan-kiri.png" alt="">
-            <img src="~/assets/images/awan-kanan.png" alt="">
+            <img src="~/assets/images/awan-kiri.png" alt="paket aqiqah emak">
+            <img src="~/assets/images/awan-kanan.png" alt="paket aqiqah emak">
         </div>
     </section>
 </template>

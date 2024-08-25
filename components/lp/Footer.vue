@@ -1,14 +1,14 @@
 <template>
     <footer>
         <div class="sky d-flex justify-content-between align-items-center position-relative">
-            <img src="~/assets/images/awan-kanan.png" alt="">
-            <img src="~/assets/images/awan-kiri.png" alt="">
+            <img src="~/assets/images/awan-kanan.png" alt="aqiqah emak">
+            <img src="~/assets/images/awan-kiri.png" alt="aqiqah emak">
         </div>
         <div class="text-wrapper">
             <h2>Aqiqah Emak</h2>
         </div>
         <div class="image-wrapper">
-            <img src="~/assets/images/jari-promo.png" alt="">
+            <img src="~/assets/images/jari-promo.png" alt="aqiqah emak">
         </div>
         <div class="paragraph-wrapper">
             <h4>Pesan dan Order Cepat dengan Layanan Terbaik dari kami</h4>
