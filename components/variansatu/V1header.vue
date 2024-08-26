@@ -1,23 +1,29 @@
 <template>
-    <section id="header" class="py-5">
+    <section id="header" class="py-5 mt-5">
         <div class="container">
             <div class="row">
                 <div class="col-12 col-md-6 d-flex align-items-center order-2 order-md-1">
                     <div class="header-wrapper">
                         <div class="text-wrapper mb-5">
 
-                            <h1 class="fw-bold lh-base">Gak perlu repot.. nyari <u class="text-success">layanan
+                            <!-- <h1 class="fw-bold lh-base">Gak perlu repot.. nyari <u class="text-success">layanan
                                     aqiqah</u> yang terpercaya
                                 dan
                                 berkualitas
                                 😍
-                            </h1>
-                            <p te>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere harum laborum minima
-                                consequuntur ducimus! Ut nostrum et dolorum dignissimos impedit.</p>
+                            </h1> -->
+                            <h1 class="fw-bold lh-base">Mulai dari Hanya <strong class="text-success">1,7 Juta!</strong>
+                                Aqiqah Berkualitas dengan Harga
+                                Terjangkau</h1>
+                            <p>Rayakan momen spesial dengan aqiqah yang penuh berkah. Mulai dari hanya 1,7 juta, kami
+                                menawarkan layanan aqiqah yang berkualitas untuk memastikan hari istimewa Anda berjalan
+                                lancar 🥰</p>
                         </div>
-                        <div class="button-wrapper">
-                            <a href="#" class="btn btn-success">Order Sekarang</a>
-                            <a href="#" class="btn btn-outline-success">Lebih Detail</a>
+                        <div class="button-wrapper gap-2 d-flex flex-column flex-md-row">
+                            <a href="javascript:;" @click="downloadPDF" class="btn btn-success"><i
+                                    class="bi bi-download me-2"></i>Download
+                                Pricelist</a>
+                            <a href="#problem" class="btn btn-outline-success">Lebih Detail</a>
                         </div>
                     </div>
 
@@ -32,7 +38,20 @@
 
 <script>
 export default {
+    methods: {
+        downloadPDF() {
+            // Gantilah URL dengan path ke file PDF Anda
+            const url = '/pdf/file.pdf';
 
+            // Membuat link untuk unduhan
+            const link = document.createElement('a');
+            link.href = url;
+            link.setAttribute('download', 'Price List Aqiqah Emak.pdf'); // Nama file yang akan diunduh
+            document.body.appendChild(link);
+            link.click();
+            link.remove(); // Hapus link setelah mengklik
+        }
+    },
 }
 </script>
 

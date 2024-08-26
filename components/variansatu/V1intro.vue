@@ -9,7 +9,7 @@
                 </div>
                 <div class="col-12 col-md-6 d-flex align-items-center">
                     <div class="text-wrapper">
-                        <h6 class="lh-base mb-4 mb-md-5">Aqiqah Emak menyediakan berbagai layanan aqiqah, termasuk
+                        <h6 class="lh-base mb-5">Aqiqah Emak menyediakan berbagai layanan aqiqah, termasuk
                             penyediaan
                             kambing,
                             catering, dan
@@ -18,9 +18,13 @@
                             sekitarnya. <br><br>
                             Kepercayaan dan kepuasan pelanggan adalah prioritas kami. Kami memastikan setiap tahap
                             aqiqah—dari pemotongan, pembersihan karkas, pengolahan, hingga pengantaran—mematuhi standar
-                            syari'i yang ketat.</h6>
-                        <a href="javascript:;" class="btn btn-success"><i class="bi bi-whatsapp me-2"></i>Konsultasi
-                            dengan kami</a>
+                            syari'i</h6>
+                        <div class="button-wrapper d-flex flex-row">
+                            <a href="https://wa.me/6285692435389?text=Assalamualaikum%20Emak.%20Sebelum%20pesan%20saya%20mau%20tanya%20tanya%20donk%20Mak"
+                                target="_blank" class="btn btn-success">
+                                <i class="bi bi-whatsapp me-2"></i>Konsultasi dengan Kami
+                            </a>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -34,4 +38,10 @@ export default {
 }
 </script>
 
-<style scoped></style>
+<style scoped>
+@media (max-width: 576px) {
+    a {
+        width: 100%;
+    }
+}
+</style>
