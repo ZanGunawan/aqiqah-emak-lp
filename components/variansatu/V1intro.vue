@@ -20,8 +20,7 @@
                             aqiqah—dari pemotongan, pembersihan karkas, pengolahan, hingga pengantaran—mematuhi standar
                             syari'i</h6>
                         <div class="button-wrapper d-flex flex-row">
-                            <a href="https://wa.me/6285692435389?text=Assalamualaikum%20Emak.%20Sebelum%20pesan%20saya%20mau%20tanya%20tanya%20donk%20Mak"
-                                target="_blank" class="btn btn-success">
+                            <a href="javascript:;" @click="handleClick" class="btn btn-success">
                                 <i class="bi bi-whatsapp me-2"></i>Konsultasi dengan Kami
                             </a>
                         </div>
@@ -34,7 +33,19 @@
 
 <script>
 export default {
+    methods: {
+        handleClick() {
+            if (window.fbq) {
+                window.fbq('track', 'WaClick'); // Melacak event klik
+            }
+            // Arahkan ke WhatsApp dengan pesan yang telah diisi
+            const phoneNumber = '6285692435389'; // Ganti dengan nomor WhatsApp Anda
+            const message = 'Assalamualaikum Emak. Sebelum pesan saya mau tanya tanya donk Mak'; // Pesan yang akan dikirim
+            const url = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
 
+            window.open(url, '_blank'); // Membuka WhatsApp dengan pesan
+        }
+    },
 }
 </script>
 

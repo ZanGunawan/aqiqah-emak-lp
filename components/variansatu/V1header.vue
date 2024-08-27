@@ -5,13 +5,6 @@
                 <div class="col-12 col-md-6 d-flex align-items-center order-2 order-md-1">
                     <div class="header-wrapper">
                         <div class="text-wrapper mb-5">
-
-                            <!-- <h1 class="fw-bold lh-base">Gak perlu repot.. nyari <u class="text-success">layanan
-                                    aqiqah</u> yang terpercaya
-                                dan
-                                berkualitas
-                                😍
-                            </h1> -->
                             <h1 class="fw-bold lh-base">Mulai dari Hanya <strong class="text-success">1,7 Juta!</strong>
                                 Aqiqah Berkualitas dengan Harga
                                 Terjangkau</h1>
@@ -49,6 +42,11 @@ export default {
             link.setAttribute('download', 'Price List Aqiqah Emak.pdf'); // Nama file yang akan diunduh
             document.body.appendChild(link);
             link.click();
+
+            if (window.fbq) {
+                window.fbq('track', 'PriceList'); // Ganti 'PriceList' dengan nama event yang sesuai
+            }
+
             link.remove(); // Hapus link setelah mengklik
         }
     },

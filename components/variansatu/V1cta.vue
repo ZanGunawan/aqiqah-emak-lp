@@ -12,9 +12,7 @@
                             subsidi Ongkir
                             🥰. Yuk Langsung tanya tanya ke Kami 😊</p>
                         <div class="button-wrapper d-flex gap-3 flex-column flex-md-row">
-                            <a class="btn btn-success"
-                                href="https://wa.me/6285692435389?text=Assalamualaikum%20Emak.%20Sebelum%20pesan%20saya%20mau%20tanya%20tanya%20donk%20Mak"
-                                target="_blank">
+                            <a class="btn btn-success" href="javascript:;" @click="handleClick">
                                 <i class="bi bi-whatsapp"></i>
                                 Chat Via Whatsaap
                             </a>
@@ -43,7 +41,23 @@ export default {
             link.setAttribute('download', 'Price List Aqiqah Emak.pdf'); // Nama file yang akan diunduh
             document.body.appendChild(link);
             link.click();
+
+            if (window.fbq) {
+                window.fbq('track', 'PriceList'); // Ganti 'PriceList' dengan nama event yang sesuai
+            }
+
             link.remove(); // Hapus link setelah mengklik
+        },
+        handleClick() {
+            if (window.fbq) {
+                window.fbq('track', 'WaClick'); // Melacak event klik
+            }
+            // Arahkan ke WhatsApp dengan pesan yang telah diisi
+            const phoneNumber = '6285692435389'; // Ganti dengan nomor WhatsApp Anda
+            const message = 'Assalamualaikum Emak. Sebelum pesan saya mau tanya tanya donk Mak'; // Pesan yang akan dikirim
+            const url = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
+
+            window.open(url, '_blank'); // Membuka WhatsApp dengan pesan
         }
     },
 }

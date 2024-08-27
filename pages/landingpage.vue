@@ -9,6 +9,7 @@
         <V1menu />
         <!-- <V1price /> -->
         <V1cta />
+        <V1brosur />
         <V1adress />
         <V1footer />
     </main>
