@@ -17,7 +17,7 @@ export default {
     methods: {
         downloadImage() {
             // Gantilah URL dengan path ke file gambar Anda
-            const url = '/images/brosur.png'; // Ganti dengan path gambar Anda
+            const url = '/images/brosurlist.png'; // Ganti dengan path gambar Anda
 
             // Membuat link untuk unduhan
             const link = document.createElement('a');
