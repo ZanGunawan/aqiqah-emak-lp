@@ -5,7 +5,6 @@
                 <div class="col-12 col-md-6 d-flex align-items-center order-2 order-md-1">
                     <div class="header-wrapper">
                         <div class="text-wrapper mb-5">
-                            {{ test }}
                             <h1 class="fw-bold lh-base">Mulai dari Hanya <strong class="text-success">1,7 Juta!</strong>
                                 Aqiqah Berkualitas dengan Harga
                                 Terjangkau</h1>
@@ -32,12 +31,6 @@
 
 <script>
 export default {
-    computed: {
-        test() {
-            const window = window.location.pathname
-            return window
-        }
-    },
     methods: {
         downloadPDF() {
             // Gantilah URL dengan path ke file PDF Anda
