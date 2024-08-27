@@ -23,7 +23,8 @@
             </div>
             <span>
                 <h6>*Menu 1 : Krengseng, Blackpaper, Teriyaki, Semur, Rendang</h6>
-                <h6>*Menu 2 : Tongseng, Sup, Gulai</h6>
+                <h6>**Menu 2 : Tongseng, Sup, Gulai</h6>
+                <h6>***Menu 1 : Domba Goreng Rempah, Krengseng, Domba Panggang</h6>
             </span>
         </div>
     </section>
@@ -39,7 +40,7 @@ export default {
                     customer: 'Untuk acara sederhana dengan kualitas yang baik.',
                     image: '/images/paket.jpeg',
                     benefits: [
-                        'Box Bento', 'Nasih Putih', 'Menu 1', 'Menu 2', 'Mix Vegetables', 'Kerupuk', 'Fruit Tea', 'Alat Makan'
+                        'Box Bento', 'Nasih Putih', 'Menu 1*', 'Menu 2**', 'Mix Vegetables', 'Kerupuk', 'Fruit Tea', 'Alat Makan'
                     ]
                 },
                 {
@@ -47,7 +48,7 @@ export default {
                     customer: 'Untuk perayaan istimewa dengan layanan terbaik.',
                     image: '/images/paket.jpeg',
                     benefits: [
-                        'Box Bento', 'Nasi Putih', 'Telur Pindang', 'Bihun Cabe Hijau', 'Menu 1', 'Menu 2', 'Mix Vegetables', 'Kerupuk', 'Fruit Tea', 'Alat Makan'
+                        'Box Bento', 'Nasi Putih', 'Telur Pindang', 'Bihun Cabe Hijau', 'Menu 1*', 'Menu 2**', 'Mix Vegetables', 'Kerupuk', 'Fruit Tea', 'Alat Makan'
                     ]
                 },
                 {
@@ -55,7 +56,7 @@ export default {
                     customer: 'Semua kebutuhan aqiqah dalam satu paket untuk acara besar.',
                     image: '/images/paket.jpeg',
                     benefits: [
-                        'Box Bento', 'Nasi Putih', 'Ayam Bakar', 'Bihun Cabe Hijau', 'Menu 1', 'Menu 2', 'Mix Vegetables', 'Kerupuk', 'Fruit Tea', 'Alat Makan'
+                        'Box Bento', 'Nasi Putih', 'Ayam Bakar', 'Bihun Cabe Hijau', 'Menu 1*', 'Menu 2**', 'Mix Vegetables', 'Kerupuk', 'Fruit Tea', 'Alat Makan'
                     ]
                 },
                 {
@@ -63,7 +64,15 @@ export default {
                     customer: 'Menambahkan hidangan khas Timur Tengah yang lezat.',
                     image: '/images/paket.jpeg',
                     benefits: [
-                        'Nasi Kebuli', 'Menu 1', 'Menu 2', 'Acar Buah', 'Sambal', 'Kerupuk', 'Fruit Tea', 'Alat Makan'
+                        'Nasi Kebuli', 'Menu 1***', 'Acar Buah', 'Sambal', 'Kerupuk', 'Fruit Tea', 'Alat Makan'
+                    ]
+                },
+                {
+                    headline: 'Paket Domba Masak 🥣',
+                    customer: 'Untuk Ayah Bunda yang suka prasmanan',
+                    image: '/images/paket.jpeg',
+                    benefits: [
+                        'Menu 1*', 'Menu 2**'
                     ]
                 },
             ]
