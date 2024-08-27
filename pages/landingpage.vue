@@ -1,11 +1,11 @@
 <template>
     <main>
-        <!-- <V1navbar />
+        <V1navbar />
         <V1header />
         <V1problem />
         <V1intro />
         <V1benefit />
-        <V1bonus /> -->
+        <V1bonus />
         <V1menu />
         <!-- <V1price /> -->
         <V1cta />
