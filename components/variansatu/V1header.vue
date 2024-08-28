@@ -44,7 +44,7 @@ export default {
             link.click();
 
             if (window.fbq) {
-                window.fbq('track', 'PriceList'); // Ganti 'PriceList' dengan nama event yang sesuai
+                window.fbq('track', 'PriceListHeader'); // Ganti 'PriceList' dengan nama event yang sesuai
             }
 
             link.remove(); // Hapus link setelah mengklik

@@ -36,7 +36,7 @@ export default {
     methods: {
         handleClick() {
             if (window.fbq) {
-                window.fbq('track', 'WaClick'); // Melacak event klik
+                window.fbq('track', 'WaClickIntro'); // Melacak event klik
             }
             // Arahkan ke WhatsApp dengan pesan yang telah diisi
             const phoneNumber = '6285692435389'; // Ganti dengan nomor WhatsApp Anda

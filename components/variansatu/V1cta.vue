@@ -43,14 +43,14 @@ export default {
             link.click();
 
             if (window.fbq) {
-                window.fbq('track', 'PriceList'); // Ganti 'PriceList' dengan nama event yang sesuai
+                window.fbq('track', 'PriceListCta'); // Ganti 'PriceList' dengan nama event yang sesuai
             }
 
             link.remove(); // Hapus link setelah mengklik
         },
         handleClick() {
             if (window.fbq) {
-                window.fbq('track', 'WaClick'); // Melacak event klik
+                window.fbq('track', 'WaClickCta'); // Melacak event klik
             }
             // Arahkan ke WhatsApp dengan pesan yang telah diisi
             const phoneNumber = '6285692435389'; // Ganti dengan nomor WhatsApp Anda
