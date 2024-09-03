@@ -13,9 +13,8 @@
                                 lancar 🥰</p>
                         </div>
                         <div class="button-wrapper gap-2 d-flex flex-column flex-md-row">
-                            <a href="javascript:;" @click="downloadPDF" class="btn btn-success"><i
-                                    class="bi bi-download me-2"></i>Download
-                                Pricelist</a>
+                            <a href="javascript:;" @click="handleClick()" class="btn btn-success"><i
+                                    class="bi bi-whatsapp me-2"></i>Hubungi Kami</a>
                             <a href="#problem" class="btn btn-outline-success">Lebih Detail</a>
                         </div>
                     </div>
@@ -32,22 +31,16 @@
 <script>
 export default {
     methods: {
-        downloadPDF() {
-            // Gantilah URL dengan path ke file PDF Anda
-            const url = '/pdf/file.pdf';
-
-            // Membuat link untuk unduhan
-            const link = document.createElement('a');
-            link.href = url;
-            link.setAttribute('download', 'Price List Aqiqah Emak.pdf'); // Nama file yang akan diunduh
-            document.body.appendChild(link);
-            link.click();
-
+        handleClick() {
             if (window.fbq) {
-                window.fbq('track', 'PriceListHeader'); // Ganti 'PriceList' dengan nama event yang sesuai
+                window.fbq('track', 'WaClickHeader'); // Melacak event klik 
             }
+            // Arahkan ke WhatsApp dengan pesan yang telah diisi
+            const phoneNumber = '6285692435389'; // Ganti dengan nomor WhatsApp Anda
+            const message = 'Assalamualaikum Emak. Sebelum pesan saya mau tanya tanya donk Mak'; // Pesan yang akan dikirim
+            const url = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
 
-            link.remove(); // Hapus link setelah mengklik
+            window.open(url, '_blank'); // Membuka WhatsApp dengan pesan
         }
     },
 }

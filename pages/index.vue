@@ -1,46 +1,26 @@
 <template>
-  <main>
-    <div class="container-wrapper">
-      <Header />
-      <Promo />
-      <Why />
-      <Benefit />
-      <Paket />
-      <Price />
-      <Footer />
-    </div>
-  </main>
+    <main>
+        <V1navbar />
+        <V1header />
+        <V1problem />
+        <V1intro />
+        <V1benefit />
+        <V1bonus />
+        <V1menu />
+        <!-- <V1price /> -->
+        <V1cta />
+        <V1brosur />
+        <V1adress />
+        <V1footer />
+    </main>
 </template>
 
 <script>
 export default {
-  name: 'IndexPage',
-  async asyncData({ redirect }) {
-    redirect('/landingpage')
-  }
+
 }
 </script>
 
 <style>
-@import url(~/assets/css/style/style.css);
-
-main {
-  background: #E8E8E8;
-}
-
-.container-wrapper {
-  background: #0A833D;
-}
-
-@media screen and (min-width: 694px) {
-  main {
-    padding-block: 40px;
-  }
-
-  .container-wrapper {
-    width: 694px;
-    margin-inline: auto;
-    border-radius: 30px
-  }
-}
+@import url(~/assets/css/variansatu/variansatu.css);
 </style>

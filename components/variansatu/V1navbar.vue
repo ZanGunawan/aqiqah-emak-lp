@@ -1,7 +1,7 @@
 <template>
     <nav class="navbar fixed-top  navbar-expand-lg bg-success">
         <div class="container">
-            <a class="navbar-brand text-white fw-bold" style="letter-spacing: 1px;" href="#">
+            <a class="navbar-brand text-white fw-bold" style="letter-spacing: 1px;" href="/">
                 <img src="~/assets/images/logo-aqiqah-emak.png" alt="Logo" width="40" height="40"
                     class="d-inline-block align-text-middle me-2">
                 Aqiqah Emak
