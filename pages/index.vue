@@ -5,7 +5,7 @@
         <!-- element -->
         <WaButton />
         <Toast />
-        <!-- <PromoModal /> -->
+        <PromoModal />
     </main>
 </template>
 
