@@ -24,6 +24,7 @@ export default {
     ],
     // analitycs
     script: [
+      { src: 'https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js', type: 'text/javascript' },
       {
         src: `https://www.googletagmanager.com/gtag/js?id=G-B2EG0K9KJP`,
         async: true,
@@ -46,6 +47,7 @@ export default {
   // Global CSS: https://go.nuxtjs.dev/config-css
   css: [
     'bootstrap/dist/css/bootstrap.css',
+    '~/assets/css/style.css',
   ],
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins

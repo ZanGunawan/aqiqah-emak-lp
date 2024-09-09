@@ -1,26 +1,35 @@
 <template>
-    <main>
-        <V1navbar />
-        <V1header />
-        <V1problem />
-        <V1intro />
-        <V1benefit />
-        <V1bonus />
-        <V1menu />
-        <!-- <V1price /> -->
-        <V1cta />
-        <V1brosur />
-        <V1adress />
-        <V1footer />
+    <main class="position-relative">
+        <Navbar />
+
+        <!-- element -->
+        <WaButton />
+        <Toast />
+        <!-- <PromoModal /> -->
     </main>
 </template>
 
 <script>
+import { mapState } from 'vuex'
 export default {
-
+    mounted() {
+        this.$store.dispatch('toast/cycleToasts');
+    },
+    async asyncData({ store }) {
+        store.dispatch('toast/fetchData')
+    },
+    computed: {
+        ...mapState('toast', ['toasts'])
+    },
+    watch: {
+        toasts(newValue) {
+            if (newValue.length > 0) {
+                // Data toasts telah tersedia, jalankan fungsi showNextToast
+                this.$store.dispatch('toast/cycleToasts');
+            }
+        }
+    }
 }
 </script>
 
-<style>
-@import url(~/assets/css/variansatu/variansatu.css);
-</style>
+<style scoped></style>
