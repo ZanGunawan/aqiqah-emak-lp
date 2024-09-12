@@ -50,4 +50,8 @@ export default {
 }
 </script>
 
-<style scoped></style>
+<style scoped>
+/* .navbar {
+    z-index: 1051;
+} */
+</style>

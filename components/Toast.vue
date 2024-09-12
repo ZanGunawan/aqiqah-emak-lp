@@ -2,7 +2,7 @@
     <div v-if="toast" class="toast-container position-fixed">
         <!-- <div class="toast" role="alert" aria-live="assertive" aria-atomic="true"> -->
         <div class="ms-3" :class="visible ? 'toast-box' : ''">
-            <div class="shadow p-3 d-flex align-items-center rounded-3 gap-2">
+            <div class="shadow bg-light p-3 d-flex align-items-center rounded-3 gap-2">
                 <div style="width: 40px; height: 40px;"
                     class="rounded-circle d-flex align-items-center justify-content-center bg-success">
                     <i class="bi bi-handbag-fill text-white"></i>
@@ -45,7 +45,7 @@ export default {
 
 <style scoped>
 .toast-container {
-    z-index: 1050;
+    z-index: 99;
     top: 80px;
     right: 5px;
 }

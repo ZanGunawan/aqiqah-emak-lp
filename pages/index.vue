@@ -1,11 +1,13 @@
 <template>
     <main class="position-relative">
         <Navbar />
+        <Header />
+        <Why />
 
         <!-- element -->
         <WaButton />
         <Toast />
-        <PromoModal />
+        <!-- <PromoModal /> -->
     </main>
 </template>
 

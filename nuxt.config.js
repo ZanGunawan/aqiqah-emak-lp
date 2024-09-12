@@ -60,8 +60,7 @@ export default {
   components: {
     dirs: [
       '~/components',
-      '~/components/lp',
-      '~/components/variansatu',
+      '~/components/index',
     ]
   },
 
