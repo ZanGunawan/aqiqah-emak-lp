@@ -5,7 +5,7 @@
             <div class="modal-dialog modal-dialog-centered">
                 <div
                     class="modal-content rounded-5 border-0 pb-4 px-3 d-flex flex-column gap-2 justify-content-center align-items-center">
-                    <img width="200px" style="margin-top: -100px;" src="~/assets/images/promo.png" alt="">
+                    <img width="200px" style="margin-top: -50px;" src="~/assets/images/spesial-promo.png" alt="">
                     <div class="mb-3">
                         <h1 class="modal-title fs-5 text-center">Pengen dapet promo special hari ini?? Klik tombol
                             dibawah, admin

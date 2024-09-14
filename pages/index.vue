@@ -3,6 +3,8 @@
         <Navbar />
         <Header />
         <Why />
+        <Offer />
+        <TestFood />
 
         <!-- element -->
         <WaButton />

@@ -1,5 +1,5 @@
 <template>
-    <nav class="navbar fixed-top navbar-expand-lg bg-success">
+    <nav class="navbar fixed-top navbar-expand-lg bg-success shadow-lg">
         <div class="container">
             <a class="navbar-brand text-white fw-bold" style="letter-spacing: .7px;" href="/">
                 <img src="~/assets/images/logo-aqiqah-emak.png" alt="Logo" width="40" height="40"
