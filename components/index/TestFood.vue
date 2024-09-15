@@ -4,9 +4,9 @@
             <h4 class="text-center text-white fw-bold">Mau Test Food?</h4>
             <h6 class="text-center text-white mb-4">Yuk ikuti langkah nya😊</h6>
             <div class="row mb-3 mb-md-4">
-                <div class="col-12 col-md-6 col-lg-4 mb-3 shadow">
+                <div class="col-12 col-md-6 col-lg-4 mb-3">
                     <div
-                        class="text-center card border-0 rounded-3 p-3 p-md-4 d-flex flex-column justify-content-center align-items-center gap-2">
+                        class="text-center card border-0 shadow rounded-3 p-3 p-md-4 d-flex flex-column justify-content-center align-items-center gap-2">
                         <span class="material-symbols-outlined" style="font-size: 48px;">
                             support_agent
                         </span>
@@ -15,9 +15,9 @@
                             membantu Anda dengan informasi dan panduan.</p>
                     </div>
                 </div>
-                <div class="col-12 col-md-6 col-lg-4 mb-3 shadow">
+                <div class="col-12 col-md-6 col-lg-4 mb-3">
                     <div
-                        class="text-center card border-0 rounded-3 p-3 p-md-4 d-flex flex-column justify-content-center align-items-center gap-2">
+                        class="text-center card border-0 shadow rounded-3 p-3 p-md-4 d-flex flex-column justify-content-center align-items-center gap-2">
                         <span class="material-symbols-outlined" style="font-size: 48px;">
                             event_available
                         </span>
@@ -26,9 +26,9 @@
                             menyiapkan paket sesuai dengan pilihan dan lokasi Anda.</p>
                     </div>
                 </div>
-                <div class="col-12 col-md-6 col-lg-4 mb-3 shadow">
+                <div class="col-12 col-md-6 col-lg-4 mb-3">
                     <div
-                        class="text-center card border-0 rounded-3 p-3 p-md-4 d-flex flex-column justify-content-center align-items-center gap-2">
+                        class="text-center card border-0 shadow rounded-3 p-3 p-md-4 d-flex flex-column justify-content-center align-items-center gap-2">
                         <span class="material-symbols-outlined" style="font-size: 48px;">
                             sentiment_very_satisfied
                         </span>
@@ -38,8 +38,39 @@
                     </div>
                 </div>
             </div>
-            <div class="cta d-flex justify-content-center">
+            <div class="cta d-flex justify-content-center mb-5">
                 <a href="#" class="btn btn-danger"><i class="bi bi-whatsapp me-2"></i>Request Test Food</a>
+            </div>
+
+            <hr class="text-white">
+
+            <!-- promo bulan ini -->
+            <div class="card border-0 rounded-3 shadow px-2 px-md-4 py-4 py-md-4 mt-5">
+                <h4 class="text-center fw-bold mb-4">
+                    Promo Terbatas Bulan ini
+                </h4>
+                <div class="row">
+                    <div class="col-12 col-md-6 mb-3">
+                        <img src="~/assets/images/promo-satu.jpg" class="img-fluid" alt="">
+                    </div>
+                    <div class="col-12 col-md-6 mb-3">
+                        <img src="~/assets/images/promo-dua.jpg" class="img-fluid" alt="">
+                    </div>
+                    <div class="col-12 col-md-6 mb-3">
+                        <img src="~/assets/images/promo-tiga.jpg" class="img-fluid" alt="">
+                    </div>
+                    <div class="col-12 col-md-6 mb-3">
+                        <img src="~/assets/images/promo-empat.jpg" class="img-fluid" alt="">
+                    </div>
+                </div>
+                <div class="fs-1 text-danger text-center fw-bold mb-2">
+                    <i class="bi bi-arrow-down-right"></i>
+                    <i class="bi bi-arrow-down"></i>
+                    <i class="bi bi-arrow-down-left"></i>
+                </div>
+                <div class="cta d-flex justify-content-center mb-2">
+                    <a href="#" class="btn btn-danger"><i class="bi bi-whatsapp me-2"></i>Ambil Promo</a>
+                </div>
             </div>
         </div>
     </section>

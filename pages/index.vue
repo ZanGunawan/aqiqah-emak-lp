@@ -5,6 +5,8 @@
         <Why />
         <Offer />
         <TestFood />
+        <Promo />
+        <Footer />
 
         <!-- element -->
         <WaButton />
@@ -21,6 +23,7 @@ export default {
     },
     async asyncData({ store }) {
         store.dispatch('toast/fetchData')
+        store.dispatch('index/setTimer')
     },
     computed: {
         ...mapState('toast', ['toasts'])
