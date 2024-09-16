@@ -11,17 +11,21 @@
             <hr class="mb-4">
         </div>
         <div class="container-custom">
-            <h4 class="text-center fw-bold lh-base">Apa aja sih isi paket special kami?</h4>
-            <span class="d-flex gap-5 justify-content-center my-3 my-md-5">
-                <img style="transform: rotate(90deg);" width="75" src="~/assets/images/fast-forward.png" alt="">
-                <img style="transform: rotate(90deg);" width="75" src="~/assets/images/fast-forward.png" alt="">
+            <h4 class="text-center fw-bold lh-base">Promo Khusus bulan ini saja!</h4>
+            <span class="d-flex gap-5 justify-content-center">
+                <span class="fs-1 fw-bold text-danger">
+                    <i class="bi bi-arrow-down-right"></i>
+                    <i class="bi bi-arrow-down"></i>
+                    <i class="bi bi-arrow-down-left"></i>
+                </span>
+                <!-- <img style="transform: rotate(90deg);" width="75" src="~/assets/images/down-arrow.mp4" alt=""> -->
+                <!-- <img style="transform: rotate(90deg);" width="75" src="~/assets/images/fast-forward.png" alt="">
+                <img style="transform: rotate(90deg);" width="75" src="~/assets/images/fast-forward.png" alt=""> -->
             </span>
-            <img src="~/assets/images/paket-special.jpg" class="img-fluid shadow" alt="">
-            <!-- <span>
-                <i class="bi bi-arrow-down-right"></i>
-                <i class="bi bi-arrow-down"></i>
-                <i class="bi bi-arrow-down-left"></i>
-            </span> -->
+            <img src="~/assets/images/promo-terbatas.jpg" class="img-fluid shadow" alt="">
+            <div class="cta d-flex justify-content-center mb-2 mt-4">
+                <a href="#" class="btn btn-danger"><i class="bi bi-whatsapp me-2"></i>Ambil Promo</a>
+            </div>
         </div>
     </section>
 </template>
@@ -32,4 +36,10 @@ export default {
 }
 </script>
 
-<style scoped></style>
+<style scoped>
+@media (max-width: 576px) {
+    a {
+        width: 100%;
+    }
+}
+</style>

@@ -2,13 +2,12 @@
     <div v-if="toast" class="toast-container position-fixed">
         <!-- <div class="toast" role="alert" aria-live="assertive" aria-atomic="true"> -->
         <div class="ms-3" :class="visible ? 'toast-box' : ''">
-            <div class="shadow bg-light p-3 d-flex align-items-center rounded-3 gap-2">
-                <div style="width: 40px; height: 40px;"
-                    class="rounded-circle d-flex align-items-center justify-content-center bg-success">
-                    <i class="bi bi-handbag-fill text-white"></i>
-                </div>
-                <div>
-                    <p class="mb-0" style="font-size: 12px;"><strong>{{ toast['Nama Pemesan'] }}</strong> dari
+            <div class="shadow bg-light border-3 p-4 d-flex align-items-center rounded-3 gap-2">
+                <!-- <div class="rounded-circle d-flex align-items-center justify-content-center bg-success">
+                </div> -->
+                <div class="d-flex align-items-center gap-3">
+                    <i class="bi bi-handbag-fill text-success"></i>
+                    <p class="mb-0" style="font-size: 16px;"><strong>{{ toast['Nama Pemesan'] }}</strong> dari
                         <strong>{{
                             toast['Location']
                             }}</strong> telah

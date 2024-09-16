@@ -6,7 +6,7 @@
                 <h1 class="text-center">Special Diskon!!</h1>
                 <h5 class="text-center">Diskon Hingga 500.000 untuk pembelian hari ini</h5>
                 <h1 class="text-center text-danger mb-4">{{ timeLeft }}</h1>
-                <div class="cta d-flex justify-content-center mb-5">
+                <div class="cta d-flex justify-content-center">
                     <a href="#" class="btn btn-danger"><i class="bi bi-whatsapp me-2"></i>Ambil Diskon</a>
                 </div>
             </div>

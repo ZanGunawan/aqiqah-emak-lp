@@ -7,8 +7,8 @@
                 terbaik dan pelayanan personal yang memuaskan.</h6>
             <img src="~/assets/images/why.jpg" class="img-fluid shadow" alt="">
             <div class="d-flex mt-3 align-items-center justify-content-center">
-                <nuxt-link to="/" class="btn btn-danger text-center shadow"><i class="bi bi-card-list me-2"></i>Price
-                    List</nuxt-link>
+                <nuxt-link to="/" class="btn btn-danger text-center shadow"><i class="bi bi-card-list me-2"></i>Lihat
+                    Harga</nuxt-link>
             </div>
         </div>
         <div class="container">
@@ -60,11 +60,11 @@
                     <div
                         class="text-center card border-0 shadow rounded-3 p-3 p-md-4 d-flex flex-column justify-content-center align-items-center gap-2">
                         <span class="material-symbols-outlined text-success mb-2" style="font-size: 48px;">
-                            search
+                            duo
                         </span>
-                        <h5 class="mb-0">Informasi Lengkap</h5>
-                        <p>Detail layanan yang jelas dan mudah diakses, memberi Anda kepastian dan keyakinan dalam
-                            memilih.</p>
+                        <h5 class="mb-0">Pemotongan Live</h5>
+                        <p>Pastikan pemotongan hewan dilakukan secara langsung untuk memastikan proses yang
+                            benar dan aman</p>
                     </div>
                 </div>
                 <div class="col-12 col-md-6 col-lg-4 mb-3">

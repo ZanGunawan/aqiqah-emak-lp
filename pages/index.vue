@@ -4,14 +4,15 @@
         <Header />
         <Why />
         <Offer />
-        <TestFood />
         <Promo />
+        <TestFood />
+        <Benefit />
         <Footer />
 
         <!-- element -->
         <WaButton />
         <Toast />
-        <!-- <PromoModal /> -->
+        <PromoModal />
     </main>
 </template>
 

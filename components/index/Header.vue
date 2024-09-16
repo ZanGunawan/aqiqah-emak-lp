@@ -27,6 +27,6 @@ export default {
 
 <style scoped>
 header {
-    margin-top: 130px;
+    margin-top: 150px;
 }
 </style>

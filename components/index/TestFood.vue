@@ -47,7 +47,7 @@
             <!-- promo bulan ini -->
             <div class="card border-0 rounded-3 shadow px-2 px-md-4 py-4 py-md-4 mt-5">
                 <h4 class="text-center fw-bold mb-4">
-                    Promo Terbatas Bulan ini
+                    Paket Mewah untuk Tamu Undangan Anda
                 </h4>
                 <div class="row">
                     <div class="col-12 col-md-6 mb-3">
@@ -63,13 +63,8 @@
                         <img src="~/assets/images/promo-empat.jpg" class="img-fluid" alt="">
                     </div>
                 </div>
-                <div class="fs-1 text-danger text-center fw-bold mb-2">
-                    <i class="bi bi-arrow-down-right"></i>
-                    <i class="bi bi-arrow-down"></i>
-                    <i class="bi bi-arrow-down-left"></i>
-                </div>
-                <div class="cta d-flex justify-content-center mb-2">
-                    <a href="#" class="btn btn-danger"><i class="bi bi-whatsapp me-2"></i>Ambil Promo</a>
+                <div class="cta d-flex justify-content-center">
+                    <a href="#" class="btn btn-danger"><i class="bi bi-whatsapp me-2"></i>Lihat Harga</a>
                 </div>
             </div>
         </div>

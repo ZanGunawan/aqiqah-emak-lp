@@ -1,6 +1,6 @@
 <template>
-    <footer class="py-4 bg-success">
-        <p class="mb-0 text-center text-white fw-bold">Design by Aqiqah Emak</p>
+    <footer style="padding-block: 100px;" class="bg-success">
+        <p class="mb-1 text-center text-white">&copy; 2024 <strong>Aqiqah Emak</strong>. All rights reserved.</p>
     </footer>
 </template>
 
