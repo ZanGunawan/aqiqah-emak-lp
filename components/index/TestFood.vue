@@ -38,8 +38,9 @@
                     </div>
                 </div>
             </div>
-            <div class="cta d-flex justify-content-center mb-5">
-                <a href="#" class="btn btn-danger"><i class="bi bi-whatsapp me-2"></i>Request Test Food</a>
+            <div id="paket" class="cta d-flex justify-content-center mb-5">
+                <a href="#" class="btn btn-danger"><i class="bi bi-whatsapp me-2"></i>Request Test
+                    Food</a>
             </div>
 
             <hr class="text-white">
@@ -64,7 +65,7 @@
                     </div>
                 </div>
                 <div class="cta d-flex justify-content-center">
-                    <a href="#" class="btn btn-danger"><i class="bi bi-whatsapp me-2"></i>Lihat Harga</a>
+                    <a href="/harga" class="btn btn-danger"><i class="bi bi-card-list me-2"></i>Lihat Harga</a>
                 </div>
             </div>
         </div>

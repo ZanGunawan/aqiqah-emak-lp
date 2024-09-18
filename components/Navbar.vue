@@ -19,11 +19,11 @@
                     <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
                         <li class="nav-item me-4 mt-4 mt-lg-0 mb-2 mb-lg-0">
                             <a class="link-light link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover"
-                                aria-current="page" href="#about"><i class="bi bi-house-door-fill me-2"></i>Beranda</a>
+                                aria-current="page" href="/"><i class="bi bi-house-door-fill me-2"></i>Beranda</a>
                         </li>
                         <li class="nav-item me-4 my-2 my-lg-0">
                             <a class="link-light link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover"
-                                href="#bonus"><i class="bi bi-card-list me-2"></i>Price List</a>
+                                href="/harga"><i class="bi bi-card-list me-2"></i>Price List</a>
                         </li>
                     </ul>
                     <form class="d-flex mb-4 mb-lg-0" role="search">

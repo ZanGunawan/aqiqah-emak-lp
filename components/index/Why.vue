@@ -7,8 +7,9 @@
                 terbaik dan pelayanan personal yang memuaskan.</h6>
             <img src="~/assets/images/why.jpg" class="img-fluid shadow" alt="">
             <div class="d-flex mt-3 align-items-center justify-content-center">
-                <nuxt-link to="/" class="btn btn-danger text-center shadow"><i class="bi bi-card-list me-2"></i>Lihat
-                    Harga</nuxt-link>
+
+                <a href="#paket" class="btn btn-danger text-center shadow"><i class="bi bi-card-list me-2"></i>Lihat
+                    Paket</a>
             </div>
         </div>
         <div class="container">

@@ -62,6 +62,7 @@ export default {
     dirs: [
       '~/components',
       '~/components/index',
+      '~/components/price',
     ]
   },
 
