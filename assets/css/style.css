@@ -4,6 +4,10 @@
     font-family: 'Poppins', sans-serif;
 }
 
+body {
+    translate: no;
+}
+
 .container-custom {
     max-width: 768px;
     margin-inline: auto;

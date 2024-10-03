@@ -1,7 +1,7 @@
 export const _meta = {
-    title: 'Aqiqah Emak - Aqiqah Khas Nusantara dengan bumbu tradisional terbaik di Karawang',
-    description: 'Solusi terpercaya untuk momen istimewa keluarga Anda. Mulai dari Rp 1,6 jutaan, kami menawarkan layanan aqiqah dengan kualitas terbaik, lengkap dengan free ongkir dan beragam bonus eksklusif. Paket kami didesain untuk kenyamanan Anda, dengan fokus pada kebersihan dan layanan prima.',
-    image: '/meta.png',
+    title: 'Aqiqah Murah Sejabodetabek | Layanan Aqiqah Terpercaya & Berkualitas',
+    description: 'Temukan layanan aqiqah murah dan terpercaya di Sejabodetabek. Kami menawarkan paket aqiqah berkualitas dengan harga terjangkau, lengkap dengan pelayanan profesional dan bahan terbaik. Jadikan momen spesial Anda lebih berarti dengan aqiqah yang aman dan sesuai syariah. Hubungi kami sekarang untuk mendapatkan penawaran terbaik!',
+    image: '/meta.jpg',
     image_type: 'image/png',
     image_width: '500',
     image_height: '500'
@@ -26,4 +26,6 @@ export const meta = [
     { property: 'twitter:image', content: _meta.image },
     { property: 'twitter:image:width', content: _meta.image_width },
     { property: 'twitter:image:height', content: _meta.image_height },
+    { name: 'google', content: 'notranslate' },
+    { name: 'robots', content: 'noindex, nofollow' },
 ];

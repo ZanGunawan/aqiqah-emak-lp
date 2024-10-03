@@ -7,7 +7,7 @@
                 <div class="col-12 col-md-6 col-lg-4 mb-3">
                     <div
                         class="text-center card border-0 shadow rounded-3 p-3 p-md-4 d-flex flex-column justify-content-center align-items-center gap-2">
-                        <span class="material-symbols-outlined" style="font-size: 48px;">
+                        <span class="material-symbols-outlined text-success" style="font-size: 48px;">
                             support_agent
                         </span>
                         <h5 class="mb-0">Hubungi Customer Service</h5>
@@ -18,7 +18,7 @@
                 <div class="col-12 col-md-6 col-lg-4 mb-3">
                     <div
                         class="text-center card border-0 shadow rounded-3 p-3 p-md-4 d-flex flex-column justify-content-center align-items-center gap-2">
-                        <span class="material-symbols-outlined" style="font-size: 48px;">
+                        <span class="material-symbols-outlined text-success" style="font-size: 48px;">
                             event_available
                         </span>
                         <h5 class="mb-0">Pilih Menu dan Alamat Pengiriman</h5>
@@ -29,7 +29,7 @@
                 <div class="col-12 col-md-6 col-lg-4 mb-3">
                     <div
                         class="text-center card border-0 shadow rounded-3 p-3 p-md-4 d-flex flex-column justify-content-center align-items-center gap-2">
-                        <span class="material-symbols-outlined" style="font-size: 48px;">
+                        <span class="material-symbols-outlined text-success" style="font-size: 48px;">
                             sentiment_very_satisfied
                         </span>
                         <h5 class="mb-0">Terima dan Nikmati Test Food</h5>

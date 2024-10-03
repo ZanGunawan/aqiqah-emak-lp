@@ -11,7 +11,8 @@
                             dibawah, admin
                             bakal kirimin promo super ke kamu</h1>
                     </div>
-                    <button type="button" class="btn btn-success"><i class="bi bi-whatsapp me-2"></i>Ambil
+                    <button @click="handleClick" type="button" class="btn btn-success"><i
+                            class="bi bi-whatsapp me-2"></i>Ambil
                         Promo</button>
                 </div>
             </div>
@@ -24,6 +25,19 @@ import { mapMutations, mapActions, mapState } from 'vuex'
 export default {
     mounted() {
         $('#promoModal').modal('show');
+    },
+    methods: {
+        handleClick() {
+            if (window.fbq) {
+                window.fbq('track', 'WaClickModal'); // Melacak event klik
+            }
+            // Arahkan ke WhatsApp dengan pesan yang telah diisi
+            const phoneNumber = '6285692435389'; // Ganti dengan nomor WhatsApp Anda
+            const message = 'Assalamualaikum Emak. Saya minta info Promo Oktober Berkah Buy 2 Get 1'; // Pesan yang akan dikirim
+            const url = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
+
+            window.open(url, '_blank'); // Membuka WhatsApp dengan pesan
+        }
     },
 }
 </script>

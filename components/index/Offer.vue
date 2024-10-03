@@ -24,7 +24,8 @@
             </span>
             <img src="~/assets/images/promo-terbatas.jpg" class="img-fluid shadow" alt="">
             <div class="cta d-flex justify-content-center mb-2 mt-4">
-                <a href="#" class="btn btn-danger"><i class="bi bi-whatsapp me-2"></i>Ambil Promo</a>
+                <a @click="handleClick" href="javascript:;" class="btn btn-danger"><i
+                        class="bi bi-whatsapp me-2"></i>Ambil Promo</a>
             </div>
         </div>
     </section>
@@ -32,7 +33,19 @@
 
 <script>
 export default {
+    methods: {
+        handleClick() {
+            if (window.fbq) {
+                window.fbq('track', 'WaClickPromo'); // Melacak event klik
+            }
+            // Arahkan ke WhatsApp dengan pesan yang telah diisi
+            const phoneNumber = '6285692435389'; // Ganti dengan nomor WhatsApp Anda
+            const message = 'Assalamualaikum Emak. Saya minta info Promo Oktober Berkah Buy 2 Get 1'; // Pesan yang akan dikirim
+            const url = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
 
+            window.open(url, '_blank'); // Membuka WhatsApp dengan pesan
+        }
+    },
 }
 </script>
 

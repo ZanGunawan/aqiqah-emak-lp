@@ -10,7 +10,19 @@
 
 <script>
 export default {
+    methods: {
+        handleClick() {
+            if (window.fbq) {
+                window.fbq('track', 'WaClickCS'); // Melacak event klik
+            }
+            // Arahkan ke WhatsApp dengan pesan yang telah diisi
+            const phoneNumber = '6285692435389'; // Ganti dengan nomor WhatsApp Anda
+            const message = 'Assalamualaikum Emak. Sebelum pesen saya mau tanya tanya donk Mak!'; // Pesan yang akan dikirim
+            const url = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
 
+            window.open(url, '_blank'); // Membuka WhatsApp dengan pesan
+        }
+    },
 }
 </script>
 
