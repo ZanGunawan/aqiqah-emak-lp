@@ -1,8 +1,8 @@
 <template>
     <section class="fixed-top">
-        <p class="mb-0 py-1 text-center bg-dark text-white">
+        <!-- <p class="mb-0 py-1 text-center bg-dark text-white">
             {{ offer }} <span class="text-danger fw-bold">{{ timeLeft }}</span>
-        </p>
+        </p> -->
         <nav class="navbar navbar-expand-lg bg-success shadow-lg">
             <div class="container">
                 <a class="navbar-brand text-white fw-bold" style="letter-spacing: .7px;" href="/">
@@ -18,12 +18,16 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
                         <li class="nav-item me-4 mt-4 mt-lg-0 mb-2 mb-lg-0">
-                            <a class="link-light link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover"
-                                aria-current="page" href="/"><i class="bi bi-house-door-fill me-2"></i>Beranda</a>
+                            <nuxt-link to="/"
+                                class="link-light link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover"
+                                aria-current="page"><i class="bi bi-house-door-fill me-2"></i>Beranda
+                            </nuxt-link>
                         </li>
                         <li class="nav-item me-4 my-2 my-lg-0">
-                            <a class="link-light link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover"
-                                href="/harga"><i class="bi bi-card-list me-2"></i>Price List</a>
+                            <nuxt-link to="/harga"
+                                class="link-light link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover"><i
+                                    class="bi bi-card-list me-2"></i>Price List
+                            </nuxt-link>
                         </li>
                     </ul>
                     <form class="d-flex mb-4 mb-lg-0" role="search">

@@ -10,7 +10,7 @@
                     <p class="mb-0" style="font-size: 16px;"><strong>{{ toast['Nama Pemesan'] }}</strong> dari
                         <strong>{{
                             toast['Location']
-                            }}</strong> telah
+                        }}</strong> telah
                         membeli <strong>Paket {{ toast['Nama Paket'] }} {{
                             toast['Jumlah Nasi Box'] }} Box</strong>
                     </p>
@@ -45,7 +45,7 @@ export default {
 <style scoped>
 .toast-container {
     z-index: 99;
-    top: 110px;
+    top: 80px;
     right: 5px;
 }
 

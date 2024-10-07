@@ -26,6 +26,4 @@ export const meta = [
     { property: 'twitter:image', content: _meta.image },
     { property: 'twitter:image:width', content: _meta.image_width },
     { property: 'twitter:image:height', content: _meta.image_height },
-    { name: 'google', content: 'notranslate' },
-    { name: 'robots', content: 'noindex, nofollow' },
 ];

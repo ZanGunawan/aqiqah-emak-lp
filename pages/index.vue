@@ -1,5 +1,5 @@
 <template>
-    <main class="position-relative">
+    <div class="position-relative">
         <Navbar />
         <Header />
         <Why />
@@ -13,12 +13,13 @@
         <WaButton />
         <Toast />
         <PromoModal />
-    </main>
+    </div>
 </template>
 
 <script>
 import { mapState } from 'vuex'
 export default {
+    layout: "default",
     mounted() {
         this.$store.dispatch('toast/cycleToasts');
     },

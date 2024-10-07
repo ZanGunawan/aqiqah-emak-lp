@@ -1,5 +1,5 @@
 <template>
-    <main>
+    <div>
         <Navbar />
         <div class="header" style="margin-top: 90px;">
             <Promo />
@@ -10,12 +10,12 @@
         <PromoModal />
         <WaButton />
         <Toast />
-    </main>
+    </div>
 </template>
 
 <script>
 export default {
-
+    layout: "default",
 }
 </script>
 
