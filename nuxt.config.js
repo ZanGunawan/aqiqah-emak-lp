@@ -2,7 +2,7 @@ import { meta, _meta } from "./meta"
 export default {
   server: {
     host: "0.0.0.0",
-    port: 1020
+    port: 4000
   },
   // Disable server-side rendering: https://go.nuxtjs.dev/ssr-mode
   ssr: false,
@@ -61,8 +61,7 @@ export default {
   components: {
     dirs: [
       '~/components',
-      '~/components/index',
-      '~/components/price',
+      '~/components/utama',
     ]
   },
 
