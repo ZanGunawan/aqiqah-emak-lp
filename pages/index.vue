@@ -24,7 +24,7 @@ export default {
         this.$store.dispatch('toast/cycleToasts');
     },
     async asyncData({ store }) {
-        store.dispatch('toast/fetchData')
+        // store.dispatch('toast/fetchData')
         store.dispatch('index/setTimer')
     },
     computed: {
