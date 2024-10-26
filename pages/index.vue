@@ -13,7 +13,7 @@ export default {
 <style scoped>
 div {
     background: rgb(228, 228, 228);
-    max-width: 360px;
+    max-width: 576px;
     margin-inline: auto;
 }
 </style>
