@@ -1,5 +1,6 @@
 <template>
     <main>
+        <LoadingOverlay />
         <nuxt />
     </main>
 </template>

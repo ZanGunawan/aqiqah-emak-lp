@@ -1,16 +1,26 @@
 s<template>
-    <div class="utama text-center position-relative">
+    <div class="utama position-relative">
         <div class="bubble"></div>
 
         <!-- header -->
-        <div class="overlay">
+        <div class="overlay text-center">
             <img src="~/assets/img/logo-aqiqah-emak.png" alt="Logo Aqiqah Emak" class="mb-5 shadow-lg">
-            <h1 class="mb-2">Rayakan <span class="text-success fw-bold">Momen Spesial</span> Ayah Bunda dengan Aqiqah
+            <h1 class="mb-2">
+                <!-- Ayah Bunda Tidak Bingung Lagi Mencari Layanan Aqiqah yang Terjangkau dan Terpercaya Untuk Buah Hati
+                Tercinta -->
+                Rayakan <span class="text-success fw-bold">Momen Spesial</span> Ayah Bunda dengan Aqiqah
                 Penuh
-                Berkah</h1>
+                Berkah
+            </h1>
             <p class="fw-light">Buat Kenangan Abadi untuk Buah Hati Tercinta dengan Layanan Aqiqah Terpercaya</p>
+            <div class="video-container shadow">
+                <video class="bg-danger" style="width: 100%;" autoplay preload="auto" muted="" loop playsinline>
+                    <source class="bg-warning" src="/video.mp4" type="video/mp4">
+                </video>
+            </div>
             <hr style="width: 50%; margin-inline: auto" class="mt-4 mb-3">
-            <p style="font-size: 12px;" class="text-danger">Ada Promo Khusus Untuk Ayah Bunda di bulan ini!! Cek yuk!
+            <p style="font-size: 12px;" class="text-danger">Ada Promo Khusus Untuk Ayah Bunda di bulan ini!! Cek
+                yuk!
             </p>
             <div class="d-flex align-items-center justify-content-center">
                 <div class="arrow-container d-flex gap-1">
@@ -29,6 +39,7 @@ s<template>
 
         <!-- pain -->
         <div class="pain">
+            <h1>Ketika Mencari Layanan Aqiqah, Ayah Bunda Pasti Khawatir akan Hal ini ..</h1>
             <p>Kesulitan mencari layanan aqiqah yang terpercaya? Terkadang, proses persiapan bisa sangat melelahkan dan
                 memakan waktu</p>
         </div>
@@ -53,7 +64,8 @@ export default {
     background-color: rgba(255, 255, 255);
 }
 
-.overlay {
+.overlay,
+.pain {
     position: relative;
     z-index: 99;
     padding-inline: 25px;
@@ -106,6 +118,15 @@ img {
     /* Warna panah */
     animation: point-right 1s infinite alternate;
     /* Animasi */
+}
+
+.video-container {
+    width: 100%;
+    border-radius: 15px;
+    max-width: 300px;
+    margin: auto;
+    overflow: hidden;
+    padding-bottom: -100px;
 }
 
 @keyframes point {
