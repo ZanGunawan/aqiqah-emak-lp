@@ -122,9 +122,83 @@ s<template>
                 <img class="img-fluid shadow" src="~/assets/img/benefit/test-food.jpg" alt="Benefit Aqiqah Emak">
                 <img class="img-fluid shadow" src="~/assets/img/benefit/undangan-digital.jpg" alt="Benefit Aqiqah Emak">
             </div>
-            <h1 class="text-center fw-bold mb-0">Varian Paket</h1>
-            <img class="img-fluid" src="~/assets/img/SATU-PAKET.png" alt="">
+            <h1 class="p-3 rounded-2 bg-success-subtle text-center fw-bold mb-3">Varian Paket</h1>
+            <img class="image-fluid mb-2 rounded-2 shadow" style="width: 100%;" src="~/assets/img/jpg/1.jpg"
+                alt="Paket Aqiqah Emak">
+            <img class="image-fluid mb-2 rounded-2 shadow" style="width: 100%;" src="~/assets/img/jpg/2.jpg"
+                alt="Paket Aqiqah Emak">
+            <img class="image-fluid mb-2 rounded-2 shadow" style="width: 100%;" src="~/assets/img/jpg/3.jpg"
+                alt="Paket Aqiqah Emak">
+            <img class="image-fluid mb-2 rounded-2 shadow" style="width: 100%;" src="~/assets/img/jpg/4.jpg"
+                alt="Paket Aqiqah Emak">
+            <img class="image-fluid mb-4 rounded-2 shadow" style="width: 100%;" src="~/assets/img/jpg/5.jpg"
+                alt="Paket Aqiqah Emak">
+            <h1 class="p-3 rounded-2 bg-success-subtle text-center fw-bold mb-3">Dan Beragam Menu Olahan</h1>
+            <img class="image-fluid mb-2 rounded-2 shadow" style="width: 100%;" src="~/assets/img/jpg/6.jpg" alt="">
+            <img class="image-fluid mb-3 rounded-2 shadow" style="width: 100%;" src="~/assets/img/jpg/7.jpg" alt="">
+            <!-- <img class="img-fluid" src="~/assets/img/SATU-PAKET.png" alt=""> -->
         </div>
+
+        <div class="benefit">
+            <h1 class="fw-bold mb-3">Apa Kata Customer Kami?</h1>
+            <div class="">
+                <img class="img-fluid rounded-2 mb-2" src="~/assets/img/cust/cust1.jpg" alt="Customer Aqiqah Emak">
+                <img class="img-fluid rounded-2 mb-2" src="~/assets/img/cust/cust2.jpg" alt="Customer Aqiqah Emak">
+                <img class="img-fluid rounded-2 mb-2" src="~/assets/img/cust/cust3.jpg" alt="Customer Aqiqah Emak">
+                <img class="img-fluid rounded-2 mb-2" src="~/assets/img/cust/cust4.jpg" alt="Customer Aqiqah Emak">
+            </div>
+        </div>
+
+        <div class="solution">
+            <h1 class="mb-3">Ayah Bunda Bisa Mengadakan <span class="fw-bold text-success">Acara Aqiqahan</span> dengan
+                Penuh Hikmat Karena..</h1>
+            <ul class="mb-4" style="list-style: none; padding: 0 !important;">
+                <li class="d-flex gap-3 mb-2"><i style="font-size: 24px"
+                        class="bi bi-check2-circle text-success"></i>Kualitas Makanan Terjaga Sampai Depan Rumah Ayah
+                    Bunda</li>
+                <hr>
+                <li class="d-flex gap-3 mb-2"><i style="font-size: 24px"
+                        class="bi bi-check2-circle text-success"></i>Dapat Foto dan Dokumentasi saat Penyembelihan Hewan
+                    Qurban</li>
+                <hr>
+                <li class="d-flex gap-3 mb-2"><i style="font-size: 24px"
+                        class="bi bi-check2-circle text-success"></i>Paket Aqiqah yang diterima Sebanding dengan Harga
+                    yang Ayah Bunda Bayar
+                </li>
+                <hr>
+                <li class="d-flex gap-3 mb-2"><i style="font-size: 24px"
+                        class="bi bi-check2-circle text-success"></i>Paket Aqiqah Datang Tepat Waktu Sesuai yang
+                    Dijanjikan</li>
+                <hr>
+                <li class="d-flex gap-3 mb-2"><i style="font-size: 24px"
+                        class="bi bi-check2-circle text-success"></i>Hewan Aqiqah Disembelih dan Diolah sesuai Syariat
+                    Islam</li>
+            </ul>
+        </div>
+
+        <div class="offer">
+            <h1 class="mb-2 p-3 rounded-2 bg-success text-white text-center" style="font-size: 20px !important;">Hanya
+                untuk Ayah
+                dan Bunda! Pesan hari ini dan nikmati keuntungan dari promo eksklusif
+                kami!</h1>
+            <img class="img-fluid rounded-2 mb-3" src="~/assets/img/offer.jpg" alt="Penawaran Aqiqah Emak">
+            <h1 class="mb-2 fw-bold text-center">Promo Terbatas!!</h1>
+            <p class="text-center">Jangan Sampai Ketinggalan</p>
+            <div class="arrow d-flex flex-row justify-content-center align-items-center">
+                <i style="font-size: 32px; color: red; font-weight: bolder;" class="bi bi-arrow-down-right"></i>
+                <i style="font-size: 32px; color: red; font-weight: bolder;" class="bi bi-arrow-down"></i>
+                <i style="font-size: 32px; color: red; font-weight: bolder;" class="bi bi-arrow-down-left"></i>
+            </div>
+            <button class="d-flex align-items-center gap-2 text-white btn btn-success rounded-pill shadow">
+                <i class="bi bi-whatsapp"></i>
+                Chat CS untuk Dapetin Promonya!</button>
+        </div>
+
+        <footer class="bg-success p-4">
+            <p class="mb-0 text-white text-center">
+                Powered by Aqiqah Emak
+            </p>
+        </footer>
     </div>
 </template>
 
@@ -149,7 +223,10 @@ export default {
 .overlay,
 .pain,
 .intro,
-.paket {
+.paket,
+.benefit,
+.solution,
+.offer {
     position: relative;
     z-index: 99;
     padding-inline: 25px;
