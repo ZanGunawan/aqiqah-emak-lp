@@ -14,7 +14,7 @@ s<template>
                 Berkah
             </h1>
             <p class="fw-light mb-4">Buat Kenangan Abadi untuk Buah Hati Tercinta dengan Layanan Aqiqah Terpercaya</p>
-            <div class="video-container shadow">
+            <div class="video-container shadow mb-3">
                 <video class="bg-danger" style="width: 100%;" autoplay preload="auto" muted="" loop playsinline>
                     <p>Loading Video...</p>
                     <source class="bg-warning" src="/video.mp4" type="video/mp4">
@@ -189,9 +189,12 @@ s<template>
                 <i style="font-size: 32px; color: red; font-weight: bolder;" class="bi bi-arrow-down"></i>
                 <i style="font-size: 32px; color: red; font-weight: bolder;" class="bi bi-arrow-down-left"></i>
             </div>
-            <button class="d-flex align-items-center gap-2 text-white btn btn-success rounded-pill shadow">
-                <i class="bi bi-whatsapp"></i>
-                Chat CS untuk Dapetin Promonya!</button>
+            <div class="d-flex justify-content-center">
+                <button
+                    class="d-flex justify-content-center align-items-center gap-2 text-white btn btn-success rounded-pill shadow">
+                    <i class="bi bi-whatsapp"></i>
+                    Chat CS untuk Dapetin Promonya!</button>
+            </div>
         </div>
 
         <footer class="bg-success p-4">
