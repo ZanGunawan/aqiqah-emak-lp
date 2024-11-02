@@ -1,7 +1,7 @@
 <template>
     <div v-if="isLoading" class="loading-overlay">
         <div class="loader">
-            <img src="~/assets/img/logo-aqiqah-emak.png" alt="Logo" class="logo" />
+            <img src="~/assets/img/main-logo.png" alt="Logo" class="logo" />
         </div>
     </div>
 </template>
@@ -41,6 +41,7 @@ export default {
     height: auto;
     position: relative;
     z-index: 2;
+    border-radius: 50%;
     /* Pastikan logo di atas animasi */
 }
 

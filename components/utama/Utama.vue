@@ -4,8 +4,7 @@ s<template>
 
         <!-- header -->
         <div class="overlay text-center">
-            <img style="border-radius: 50%;" src="~/assets/img/logo-aqiqah-emak.png" alt="Logo Aqiqah Emak"
-                class="mb-5 shadow-lg">
+            <img style="height: 60px;" src="~/assets/img/logo-aqiqah-emak.png" alt="Logo Aqiqah Emak" class="mb-5">
             <h1 class="mb-2">
                 <!-- Ayah Bunda Tidak Bingung Lagi Mencari Layanan Aqiqah yang Terjangkau dan Terpercaya Untuk Buah Hati
                 Tercinta -->
@@ -72,8 +71,7 @@ s<template>
         <div class="intro">
             <h1 class="mb-3 text-center">- Perkenalkan -</h1>
             <div class="image-container">
-                <img style="border-radius: 50%;" src="~/assets/img/logo-aqiqah-emak.png" alt="Logo Aqiqah Emak"
-                    class="mb-4 shadow-lg">
+                <img style="height: 85px;" src="~/assets/img/logo-aqiqah-emak.png" alt="Logo Aqiqah Emak" class="mb-4">
             </div>
             <h1 class="mb-2 text-success fw-bold text-center" style="font-size: 32px;">AQIQAH EMAK</h1>
             <p class="text-center mb-4">Layanan Aqiqah yang Lengkap, Mulai dari Pemilihan Hewan
