@@ -10,7 +10,7 @@ export default {
         this.$store.commit('SET_LOADING', true); // Mulai loading
         setTimeout(() => {
             this.$store.commit('SET_LOADING', false); // Sembunyikan loading setelah 2 detik
-        }, 2000);
+        }, 500);
     }
 }
 </script>
