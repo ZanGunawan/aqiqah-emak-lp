@@ -93,7 +93,7 @@ s<template>
                 </li>
                 <hr>
                 <li class="d-flex gap-3 mb-2"><i style="font-size: 24px"
-                        class="bi bi-check2-circle text-success"></i>Memiliki Program Buy 2 Get 3 yang tak ditemukan di
+                        class="bi bi-check2-circle text-success"></i>Memiliki Program Buy 2 Get 1 yang tak ditemukan di
                     Layanan Aqiqah Lain</li>
                 <hr>
                 <li class="d-flex gap-3 mb-2"><i style="font-size: 24px"
@@ -109,20 +109,19 @@ s<template>
             <h1 class="text-center fw-bold">Benefit</h1>
             <p class="text-center">Banyak Bonus yang Didapat Oleh Ayah Bunda </p>
             <div class="image-grid mb-4">
-                <img class="img-fluid shadow" src="~/assets/img/benefit/boneka-gratis.jpg" alt="Benefit Aqiqah Emak">
-                <img class="img-fluid shadow" src="~/assets/img/benefit/dokumentasi.jpg" alt="Benefit Aqiqah Emak">
-                <img class="img-fluid shadow" src="~/assets/img/benefit/fruittea.jpg" alt="Benefit Aqiqah Emak">
-                <img class="img-fluid shadow" src="~/assets/img/benefit/gratis-ongkis.jpg" alt="Benefit Aqiqah Emak">
-                <img class="img-fluid shadow" src="~/assets/img/benefit/kartu-ucapan.jpg" alt="Benefit Aqiqah Emak">
-                <img class="img-fluid shadow" src="~/assets/img/benefit/plastik-packaging.jpg"
-                    alt="Benefit Aqiqah Emak">
-                <img class="img-fluid shadow" src="~/assets/img/benefit/sertifikat.jpg" alt="Benefit Aqiqah Emak">
-                <img class="img-fluid shadow" src="~/assets/img/benefit/test-food.jpg" alt="Benefit Aqiqah Emak">
-                <img class="img-fluid shadow" src="~/assets/img/benefit/undangan-digital.jpg" alt="Benefit Aqiqah Emak">
-                <img class="img-fluid shadow" src="~/assets/img/benefit/gantungan-kunci.jpg" alt="Benefit Aqiqah Emak">
-                <img class="img-fluid shadow" src="~/assets/img/benefit/goodie-bag.jpg" alt="Benefit Aqiqah Emak">
-                <img class="img-fluid shadow" src="~/assets/img/benefit/minyak.jpg" alt="Benefit Aqiqah Emak">
-                <img class="img-fluid shadow" src="~/assets/img/benefit/mug.jpg" alt="Benefit Aqiqah Emak">
+                <img class="img-fluid shadow" src="~/assets/img/benefit/1.jpg" alt="Benefit Aqiqah Emak">
+                <img class="img-fluid shadow" src="~/assets/img/benefit/2.jpg" alt="Benefit Aqiqah Emak">
+                <img class="img-fluid shadow" src="~/assets/img/benefit/3.jpg" alt="Benefit Aqiqah Emak">
+                <img class="img-fluid shadow" src="~/assets/img/benefit/4.jpg" alt="Benefit Aqiqah Emak">
+                <img class="img-fluid shadow" src="~/assets/img/benefit/5.jpg" alt="Benefit Aqiqah Emak">
+                <img class="img-fluid shadow" src="~/assets/img/benefit/6.jpg" alt="Benefit Aqiqah Emak">
+                <img class="img-fluid shadow" src="~/assets/img/benefit/7.jpg" alt="Benefit Aqiqah Emak">
+                <img class="img-fluid shadow" src="~/assets/img/benefit/8.jpg" alt="Benefit Aqiqah Emak">
+                <img class="img-fluid shadow" src="~/assets/img/benefit/9.jpg" alt="Benefit Aqiqah Emak">
+                <img class="img-fluid shadow" src="~/assets/img/benefit/10.jpg" alt="Benefit Aqiqah Emak">
+                <img class="img-fluid shadow" src="~/assets/img/benefit/11.jpg" alt="Benefit Aqiqah Emak">
+                <img class="img-fluid shadow" src="~/assets/img/benefit/12.jpg" alt="Benefit Aqiqah Emak">
+                <img class="img-fluid shadow" src="~/assets/img/benefit/13.jpg" alt="Benefit Aqiqah Emak">
             </div>
             <h1 class="p-3 rounded-2 bg-success-subtle text-center fw-bold mb-3">Varian Paket</h1>
             <img class="image-fluid mb-2 rounded-2 shadow" style="width: 100%;" src="~/assets/img/jpg/1.jpg"
@@ -179,8 +178,8 @@ s<template>
                     Dijanjikan</li>
                 <hr>
                 <li class="d-flex gap-3 mb-2"><i style="font-size: 24px"
-                        class="bi bi-check2-circle text-success"></i>Hewan Aqiqah Disembelih dan Diolah sesuai Syariat
-                    Islam</li>
+                        class="bi bi-check2-circle text-success"></i>Hewan Aqiqah Disembelih dan Diolah dengan baik dan
+                    benar</li>
             </ul>
         </div>
 

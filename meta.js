@@ -1,5 +1,6 @@
 export const _meta = {
-    title: 'Aqiqah Murah Sejabodetabek | Layanan Aqiqah Terpercaya & Berkualitas',
+    // title: 'Aqiqah Emak | Aqiqah Murah Sejabodetabek | Layanan Aqiqah Terpercaya & Berkualitas',
+    title: 'Promo Aqiqah Buy 2 Get 1 | Aqiqah Emak | Aqiqah Murah Sejabodetabek',
     description: 'Temukan layanan aqiqah murah dan terpercaya di Sejabodetabek. Kami menawarkan paket aqiqah berkualitas dengan harga terjangkau, lengkap dengan pelayanan profesional dan bahan terbaik. Jadikan momen spesial Anda lebih berarti dengan aqiqah yang aman dan sesuai syariah. Hubungi kami sekarang untuk mendapatkan penawaran terbaik!',
     image: '/meta.jpg',
     image_type: 'image/png',
