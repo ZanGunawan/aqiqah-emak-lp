@@ -1,0 +1,140 @@
+:root {
+  --w-heading: 700;
+  --w-subheading: 400;
+  --w-btn: 600;
+  --s-heading: 50px;
+  --s-subheading: 24px;
+  --s-btn: 20px;
+  --p-btn: 16px 20px;
+  --bg-primaryColor: #65BD06;
+  --primaryColor: #fff;
+  --secondaryColor: #65BD06;
+  --thirdColor: #FFBF1E;
+  --fourthColor: #000;
+  --bg-btnPrimary: linear-gradient(45deg, #B1F864, #65BD06, #5DB200);
+  --bg-btnSecondary: #FFBF1E;
+  --bg-hover-btnSecondary: #65BD06;
+}
+
+nav .container .link-container ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 24px;
+  list-style: none;
+}
+nav .container .link-container ul li a {
+  text-decoration: none;
+}
+nav .container .link-container ul li a:hover {
+  text-decoration: none;
+  color: var(--thirdColor) !important;
+}
+nav .container .link-container ul li a.btn {
+  background-color: var(--bg-btnSecondary);
+  padding: 14px 24px;
+}
+nav .container .link-container ul li a.btn:hover {
+  background-color: var(--bg-hover-btnSecondary);
+  transition: all 0.3s ease-in-out;
+  color: #000 !important;
+  padding: 14px 24px;
+}
+
+#home .home .container {
+  margin-top: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#home .home .container h1 {
+  color: var(--primaryColor);
+  font-weight: var(--w-heading);
+  font-size: var(--s-heading);
+  letter-spacing: 2px;
+  margin-bottom: 10px;
+}
+#home .home .container p {
+  color: var(--primaryColor);
+  font-weight: var(--w-subheading) !important;
+  font-size: var(--s-subheading);
+  margin-bottom: 50px;
+}
+#home .home .container .cta a {
+  color: var(--primaryColor);
+  font-size: var(--s-btn);
+  letter-spacing: 1px;
+  text-decoration: none;
+}
+#home .home .container .cta a.btn {
+  background: var(--bg-btnPrimary);
+  padding: var(--p-btn);
+  border-radius: 30px;
+  border: none;
+}
+#home .cta-section {
+  display: flex;
+}
+#home .cta-section .container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#home .cta-section .container h1 {
+  color: var(--fourthColor);
+  font-weight: var(--w-heading);
+  font-size: var(--s-heading);
+  letter-spacing: 2px;
+  margin-bottom: 10px;
+}
+#home .cta-section .container p {
+  color: var(--fourthColor);
+  font-weight: var(--w-subheading) !important;
+  font-size: var(--s-subheading);
+  margin-bottom: 50px;
+}
+#home .cta-section .container .cta a {
+  color: var(--primaryColor);
+  font-size: var(--s-btn);
+  letter-spacing: 1px;
+  text-decoration: none;
+}
+#home .cta-section .container .cta a.btn {
+  background: var(--bg-btnPrimary);
+  padding: var(--p-btn);
+  border-radius: 30px;
+  border: none;
+}
+#home .service {
+  display: flex;
+  background-color: var(--bg-primaryColor);
+}
+#home .service .container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#home .service .container h1 {
+  color: var(--fourthColor);
+  font-weight: var(--w-heading);
+  font-size: var(--s-heading);
+  letter-spacing: 2px;
+  margin-bottom: 10px;
+}
+#home .service .container p {
+  color: var(--fourthColor);
+  font-weight: var(--w-subheading) !important;
+  font-size: var(--s-subheading);
+  margin-bottom: 50px;
+}
+#home .service .container .cta a {
+  color: var(--primaryColor);
+  font-size: var(--s-btn);
+  letter-spacing: 1px;
+  text-decoration: none;
+}
+#home .service .container .cta a.btn {
+  background: var(--bg-btnPrimary);
+  padding: var(--p-btn);
+  border-radius: 30px;
+}/*# sourceMappingURL=main.css.map */
