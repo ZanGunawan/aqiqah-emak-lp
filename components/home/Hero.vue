@@ -20,20 +20,47 @@
             </div>
         </div>
         <div class="service">
-            <div class="d-flex flex-column container">
-                <h1 class="text-center">Layanan Kami</h1>
-                <p class="text-center">Berikut layanan dan paket yang kami sediakan di Aqiqah Emak</p>
-                <!-- <div class="cta d-flex align-items-center">
-                    <a href="#" class="btn text-capitalize">Tentang kami</a>
-                </div> -->
+          <div class="container">
+            <div class="headline-wrapper d-flex flex-column">
+              <h1 class="text-center">Layanan Kami</h1>
+              <p class="text-center">Berikut layanan dan paket yang kami sediakan di Aqiqah Emak</p>
             </div>
+                <!-- <div class="cta d-flex align-items-center">
+                  <a href="#" class="btn text-capitalize">Tentang kami</a>
+                </div> -->
+            <div class="container-menu">
+              <div v-for="(data, index) in menu" :key="index" class="box-menu">
+                <div class="image-wrapper">
+                  <img src="~/assets/img/menu/1.jpg" alt="menu aqiqah emak">
+                </div>
+                <div class="text-wrapper">
+                  <div class="text_head-wrapper d-flex justify-content-between align-items-center">
+                    <h3 class="mb-0">Paket Lengkap</h3>
+                    <p class="mb-0">Best Seller</p>
+                  </div>
+                  <div class="text_menu-wrapper">
+                    <p class="mb-0">Menyediakan menu lengkap versi aqiqah emak, ( menu / makanan / minuman / sertifikat / boneka / goodie bag dll )</p>
+                  </div>
+                  <div class="cta-wrapper">
+                    <a href="#">Read More</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
     </div>
 </template>
 
 <script>
 export default {
-
+  data() {
+    return {
+      menu: [
+        {}, {}, {}, {}, {}
+      ]
+    }
+  },
 }
 </script>
 
