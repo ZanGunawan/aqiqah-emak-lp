@@ -303,7 +303,45 @@ nav .container .link-container ul li a.btn:hover {
   border-radius: 20px;
   border: 1px solid #DFDFDF;
   padding: 30px;
+  height: -moz-fit-content;
+  height: fit-content;
 }
 #home .testimoni .cust-wrapper .cust-box .text-wrapper h4 {
-  font-weight: unset;
+  font-weight: 700;
+  font-size: var(--s-subheading);
+}
+#home .testimoni .cust-wrapper .cust-box .text-wrapper p {
+  font-weight: 400;
+  font-size: 16px;
+}
+#home .testimoni .cust-wrapper .cust-box .text-wrapper .star-wrapper {
+  display: flex;
+  justify-content: center;
+}
+#home .testimoni .cust-wrapper .cust-box .text-wrapper .star-wrapper span i {
+  color: #ffbf1e;
+  font-size: 24px;
+}
+#home .testimoni .cust-wrapper .cust-box .text-wrapper .image-wrapper {
+  overflow: hidden;
+}
+#home .testimoni .cust-wrapper .cust-box .text-wrapper .image-wrapper img {
+  width: 100%;
+  height: auto;
+}
+#home .testimoni .cta a {
+  background: var(--bg-btnPrimary);
+  color: var(--primaryColor);
+  font-weight: var(--w-btn);
+  font-size: var(--s-btn);
+  padding: var(--p-btn);
+  border-radius: 15px;
+  letter-spacing: 1px;
+  text-decoration: none;
+  transition: all 0.3s ease-in-out;
+}
+#home .testimoni .cta a:hover {
+  color: var(--primaryColor);
+  background: var(--bg-btnPrimaryHover);
+  transition: all 0.3s ease-in-out;
 }/*# sourceMappingURL=main.css.map */

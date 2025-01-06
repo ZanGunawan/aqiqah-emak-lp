@@ -2,7 +2,19 @@
   <div id="home">
     <div class="home">
       <div class="d-flex flex-column container">
-        <h1 class="text-center">Layanan Aqiqah dengan Beragam menu Olahan</h1>
+        <!-- <h1 class="text-center">Layanan Aqiqah dengan <transition name="fade">
+          <span :key="currentText" class="dynamic-part">{{ currentText }}</span>
+          </transition>
+        </h1> -->
+        <vue-typed-js :strings="['Beragam menu Olahan', 'Pelayanan Terbaik', 'Rasa dan Pengiriman Terpercaya']"
+            :type-speed="50"
+            :back-speed="30"
+            :back-delay="2000"
+            :loop="true">
+          <h1 class="text-center">Layanan Aqiqah dengan
+          <span class="typing"></span>
+          </h1>
+        </vue-typed-js>
         <p class="text-center">Pesan mudah, layanan cepat 24 jam siap dikirim sesuai request anda!</p>
         <div class="cta d-flex align-items-center gap-4">
           <a href="#" class="btn text-capitalize">send message</a>
@@ -71,14 +83,22 @@
         <div class="headline-wrapper d-flex flex-column">
           <h1 class="text-center">Testimoni Real dari Pelanggan Kami</h1>
         </div>
-        <div class="cust-wrapper">
+        <div class="cust-wrapper mb-5">
           <div class="cust-box" v-for="(data, index) in testimoni" :key="index">
             <div class="text-wrapper">
-              <h4>{{ data.name }}</h4>
-              <p>{{ data.date }}</p>
-              <span>{{ data.star }}</span>
+              <h4 class="text-capitalize text-center mb-1">{{ data.name }}</h4>
+              <p class="text-center">{{ data.date }}</p>
+              <div class="star-wrapper mb-3">
+                <span class="text-center"><i class="bi bi-star-fill me-1" v-for="(value, i) in data.star" :key="i"></i></span>
+              </div>
+              <div class="image-wrapper">
+                <img :src="data.src" :alt="data.alt">
+              </div>
             </div>
           </div>
+        </div>
+        <div class="cta d-flex align-items-center justify-content-center">
+          <a href="#" class="text-capitalize">Lihat lebih banyak</a>
         </div>
       </div>
     </div>
@@ -89,6 +109,12 @@
 export default {
   data() {
     return {
+      texts: [
+        'Beragam menu Olahan',
+        'Pelayanan Terbaik',
+        'Rasa dan Pengiriman Terpercaya',
+      ],
+      currentIndex: 0,
       menu: [
         {}, {}, {}, {}, {}
       ],
@@ -146,6 +172,18 @@ export default {
 </script>
 
 <style scoped>
+.dynamic-part {
+  display: inline-block;
+}
+
+.fade-enter-active, .fade-leave-active {
+  transition: opacity 1s ease-in-out;
+}
+
+.fade-enter, .fade-leave-to /* .fade-leave-active in <2.1.8 */ {
+  opacity: 0;
+}
+
 .home {
   background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
     url(~/assets/img/bg-hero.jpg);

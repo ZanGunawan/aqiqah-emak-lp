@@ -76,6 +76,7 @@ nav {
         font-size: var(--s-heading);
         letter-spacing: 2px;
         margin-bottom: 10px;
+
       }
 
       p {
@@ -392,11 +393,53 @@ nav {
         border-radius: 20px;
         border: 1px solid #DFDFDF;
         padding: 30px;
+        height: fit-content;
 
         .text-wrapper {
           h4 {
-            font-weight: unset;
+            font-weight: 700;
+            font-size: var(--s-subheading);
           }
+          p {
+            font-weight: 400;
+            font-size: 16px;
+          }
+          .star-wrapper {
+            display: flex;
+            justify-content: center;
+            span {
+              i {
+                color: #ffbf1e;
+                font-size: 24px;
+              }
+            }
+          }
+          .image-wrapper {
+            overflow: hidden;
+            img {
+              width: 100%;
+              height: auto;
+            }
+          }
+        }
+      }
+    }
+    .cta {
+      a {
+        background: var(--bg-btnPrimary);
+        color: var(--primaryColor);
+        font-weight: var(--w-btn);
+        font-size: var(--s-btn);
+        padding: var(--p-btn);
+        border-radius: 15px;
+        letter-spacing: 1px;
+        text-decoration: none;
+        transition: all .3s ease-in-out;
+
+        &:hover {
+          color: var(--primaryColor);
+          background: var(--bg-btnPrimaryHover);
+          transition: all .3s ease-in-out;
         }
       }
     }
