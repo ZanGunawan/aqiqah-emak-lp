@@ -1,6 +1,7 @@
 <template>
     <main>
         <!-- navbar -->
+        <LoadingOverlay />
         <Navbar />
         <!-- end navbar -->
 
@@ -10,6 +11,7 @@
 </template>
 
 <script>
+
 export default {
 
 }

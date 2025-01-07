@@ -28,6 +28,9 @@ nav .container .link-container ul {
 nav .container .link-container ul li a {
   text-decoration: none;
 }
+nav .container .link-container ul li a.nuxt-link-exact-active {
+  color: var(--thirdColor) !important;
+}
 nav .container .link-container ul li a:hover {
   text-decoration: none;
   color: var(--thirdColor) !important;
@@ -45,36 +48,190 @@ nav .container .link-container ul li a.btn:hover {
 
 footer {
   padding-block: 70px 36px;
-  background: linear-gradient(#2DEB05, #1A8803, #072201);
+  background: linear-gradient(#2deb05, #1a8803, #072201);
 }
-footer .container .row {
+footer .container .container-footer {
+  display: grid;
+  gap: 30px;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
   margin-bottom: 70px;
 }
-footer .container .row .brand img {
-  height: 116px;
+footer .container .container-footer .brand img {
+  height: 80px;
 }
-footer .container .row .brand h5 {
+footer .container .container-footer .brand h5 {
   font-weight: 700;
   font-size: var(--s-subheading);
   color: var(--primaryColor);
   text-align: center;
   letter-spacing: 1px;
 }
-footer .container .row .brand p {
+footer .container .container-footer .brand p {
   font-weight: 400;
   font-size: 16px;
   color: var(--primaryColor);
   text-align: center;
 }
-footer .container .row .brand a {
+footer .container .container-footer .brand a {
   padding: 14px 24px;
   background-color: var(--bg-btnSecondary);
   color: #fff;
   text-decoration: none;
   border-radius: 30px;
+  transition: background-color 0.3s ease-in-out;
 }
-footer .container .row .cta .avatar .avatar-wrapper img {
+footer .container .container-footer .brand a:hover {
+  transition: background-color 0.3s ease-in-out;
+  background-color: #ff9a16;
+}
+footer .container .container-footer .menu {
+  display: flex;
+  justify-content: center;
+}
+footer .container .container-footer .menu .menu-wrapper h6 {
+  font-weight: 700;
+  font-size: 20px;
+  color: var(--primaryColor);
+  margin-bottom: 25px;
+}
+footer .container .container-footer .menu .menu-wrapper ul {
+  list-style: none;
+  padding: 0 !important;
+}
+footer .container .container-footer .menu .menu-wrapper ul li a {
+  padding-right: 70px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding-left: 0;
+  text-decoration: none;
+  color: var(--primaryColor);
+  font-size: 18px;
+  font-weight: 400;
+  margin-bottom: 24px;
+}
+footer .container .container-footer .menu .menu-wrapper ul li a::after {
+  content: "";
+  position: absolute;
+  bottom: -12px;
+  width: 100%;
+  height: 0.5px;
+  background-color: #fff;
+}
+footer .container .container-footer .menu .menu-wrapper ul li a i {
+  color: var(--primaryColor);
+  font-size: 18px;
+  font-weight: 400;
+  margin-left: 8px;
+}
+footer .container .container-footer .cta h6 {
+  font-weight: 700;
+  font-size: 20px;
+  color: var(--primaryColor);
+  margin-bottom: 15px;
+}
+footer .container .container-footer .cta .sosmed-wrapper {
+  margin-bottom: 20px;
+}
+footer .container .container-footer .cta .sosmed-wrapper a {
+  text-decoration: none;
+  font-size: 20px;
+  color: var(--primaryColor);
+}
+footer .container .container-footer .cta .avatar {
+  display: flex;
+  align-items: center;
+}
+footer .container .container-footer .cta .avatar .avatar-wrapper {
+  position: relative;
+  z-index: 1;
+  height: 120px;
+  width: 120px;
+  background: #1a8803;
+  border: 6px solid #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+}
+footer .container .container-footer .cta .avatar .avatar-wrapper img {
   width: 104px;
+}
+footer .container .container-footer .cta .avatar .cta-wrapper {
+  position: relative;
+  z-index: 0;
+  margin-left: -40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: var(--bg-primaryColor);
+  height: -moz-fit-content;
+  height: fit-content;
+  padding: 11px 35px 11px 49px;
+  border-top-right-radius: 50px;
+  border-bottom-right-radius: 50px;
+}
+footer .container .container-footer .cta .avatar .cta-wrapper .cta-wrapper_headline {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+footer .container .container-footer .cta .avatar .cta-wrapper .cta-wrapper_headline p {
+  font-size: 14px;
+  font-weight: 400;
+  color: var(--primaryColor);
+  margin-bottom: 0 !important;
+}
+footer .container .container-footer .cta .avatar .cta-wrapper .cta-wrapper_headline span {
+  font-weight: 400;
+  color: var(--primaryColor);
+  margin-bottom: 0 !important;
+  font-size: 12px;
+  padding: 4px 10px;
+  border-radius: 20px;
+  background-color: rgba(255, 255, 255, 0.3019607843);
+}
+footer .container .container-footer .cta .avatar .cta-wrapper h5 {
+  font-weight: 700;
+  font-size: 18px;
+  color: var(--primaryColor);
+}
+footer .container .container-footer .cta .avatar .cta-wrapper h5 span {
+  display: block;
+}
+footer .container .cp {
+  display: flex;
+  justify-content: center;
+}
+footer .container .cp span {
+  color: var(--primaryColor);
+  font-size: 14px;
+  font-weight: 400;
+  letter-spacing: 1px;
+}
+
+header .header {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  min-height: calc(60vh + 73px + 73px);
+  padding-block: 73px;
+  display: flex;
+  align-items: center;
+}
+header .header .container .text-wrapper h1 {
+  color: var(--primaryColor);
+  font-weight: var(--w-heading);
+  font-size: var(--s-heading);
+  letter-spacing: 2px;
+  margin-bottom: 10px;
+}
+header .header .container .text-wrapper p {
+  color: var(--primaryColor);
+  font-weight: var(--w-subheading) !important;
+  font-size: var(--s-subheading);
+  margin-bottom: 0px;
 }
 
 #home .home .container {
@@ -171,7 +328,7 @@ footer .container .row .cta .avatar .avatar-wrapper img {
 }
 #home .service .container .container-menu {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
   gap: 30px;
 }
 #home .service .container .container-menu .box-menu {
@@ -335,7 +492,7 @@ footer .container .row .cta .avatar .avatar-wrapper img {
 }
 #home .testimoni .cust-wrapper .cust-box {
   border-radius: 20px;
-  border: 1px solid #DFDFDF;
+  border: 1px solid #dfdfdf;
   padding: 30px;
   height: -moz-fit-content;
   height: fit-content;

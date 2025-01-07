@@ -14,24 +14,17 @@
             <div class="link-container" id="navbarSupportedContent">
                 <ul class="ms-auto me-3 mb-2 mb-lg-0">
                     <li class="">
-                        <a class="fw-light" :class="isNavbarVisible ? 'text-dark' : 'text-white'" aria-current="page"
-                            href="#">Tentang Kami</a>
+                        <nuxt-link to="/about" class="fw-light" :class="isNavbarVisible ? 'text-dark' : 'text-white'" >Tentang Kami</nuxt-link>
                     </li>
                     <li class="">
-                        <a class="fw-light" :class="isNavbarVisible ? 'text-dark' : 'text-white'" aria-current="page"
-                            href="#">Product</a>
+                      <nuxt-link to="/layanan" class="fw-light" :class="isNavbarVisible ? 'text-dark' : 'text-white'">Layanan</nuxt-link>
                     </li>
+                    <!-- <li class="">
+                      <a class="fw-light" :class="isNavbarVisible ? 'text-dark' : 'text-white'" aria-current="page"
+                      href="#">Testimoni</a>
+                    </li> -->
                     <li class="">
-                        <a class="fw-light" :class="isNavbarVisible ? 'text-dark' : 'text-white'" aria-current="page"
-                            href="#">Layanan</a>
-                    </li>
-                    <li class="">
-                        <a class="fw-light" :class="isNavbarVisible ? 'text-dark' : 'text-white'" aria-current="page"
-                            href="#">Testimoni</a>
-                    </li>
-                    <li class="">
-                        <a class="fw-light" :class="isNavbarVisible ? 'text-dark' : 'text-white'" aria-current="page"
-                            href="#">Galeri</a>
+                      <nuxt-link to="/galery" class="fw-light" :class="isNavbarVisible ? 'text-dark' : 'text-white'">Galeri</nuxt-link>
                     </li>
                     <li class="">
                         <a class="btn rounded-pill text-dark" aria-current="page" href="#">Hubungi Kami</a>
@@ -102,6 +95,7 @@ export default {
     left: 0;
     transition: top 0.3s ease-in-out;
     background-color: #fff;
+    box-shadow: 0 2px 15px #00000088;
     /* Navbar muncul */
     /* Navbar muncul di posisi atas */
 }

@@ -50,6 +50,11 @@ export default {
     ]
   },
 
+  router: {
+    // Hook sebelum route berubah
+    middleware: ['routeChange']
+  },
+
   // Modules for dev and build (recommended): https://go.nuxtjs.dev/config-modules
   buildModules: [
   ],

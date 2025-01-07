@@ -1,8 +1,8 @@
 <template>
     <footer>
         <div class="container">
-            <div class="row">
-                <div class="col-12 col-md-6 col-lg-4 d-flex flex-column align-items-center brand gap-3">
+            <div class="container-footer">
+                <div class="d-flex flex-column align-items-center brand gap-3">
                     <img src="~/assets/img/path6.png" alt="Aqiqah Emak Logo">
                     <h5>Aqiqah Emak</h5>
                     <p>Bekasi, Karawang, Cikampek, Subang, Jakarta, Tanggerang</p>
@@ -10,21 +10,29 @@
                         <i class="bi bi-telephone-fill me-2"></i>Hubungi Kami
                     </a>
                 </div>
-                <div class="col-12 col-md-6 col-lg-4 menu">
-                    <h6>Quick Acces</h6>
+                <div class="menu">
+                  <div class="menu-wrapper">
+                    <h6>Quick Access</h6>
                     <ul>
                         <li><a href="#"><i class="bi bi-book"></i>Tentang Kami</a></li>
                         <li><a href="#"><i class="bi bi-image"></i>Galeri Kami</a></li>
                         <li><a href="#"><i class="bi bi-basket2"></i>Layanan Kami</a></li>
                         <li><a href="#"><i class="bi bi-chat-left-dots"></i>Testimoni Customer</a></li>
                     </ul>
+                  </div>
                 </div>
-                <div class="col-12 col-md-6 col-lg-4 cta">
+                <div class="cta">
                     <h6>Hubungi Kami</h6>
-                    <div class="sosmed d-flex">
+                    <div class="sosmed-wrapper d-flex gap-2">
+                      <a href="#">
                         <i class="bi bi-facebook"></i>
+                      </a>
+                      <a href="#">
                         <i class="bi bi-instagram"></i>
+                      </a>
+                      <a href="#">
                         <i class="bi bi-envelope"></i>
+                      </a>
                     </div>
                     <div class="avatar">
                         <div class="avatar-wrapper">

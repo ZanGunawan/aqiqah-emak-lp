@@ -27,7 +27,7 @@
         <h1 class="text-center">Lebih Mengenali Aqiqah Emak dengan dekat</h1>
         <p class="text-center">Pesan mudah, layanan cepat 24 jam siap dikirim sesuai request anda!</p>
         <div class="cta d-flex align-items-center">
-          <a href="#" class="btn text-capitalize">Tentang kami</a>
+          <nuxt-link to="/about" class="btn text-capitalize">Tentang Kami</nuxt-link>
         </div>
       </div>
     </div>
