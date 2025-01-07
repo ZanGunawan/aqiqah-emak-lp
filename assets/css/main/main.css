@@ -43,6 +43,40 @@ nav .container .link-container ul li a.btn:hover {
   padding: 14px 24px;
 }
 
+footer {
+  padding-block: 70px 36px;
+  background: linear-gradient(#2DEB05, #1A8803, #072201);
+}
+footer .container .row {
+  margin-bottom: 70px;
+}
+footer .container .row .brand img {
+  height: 116px;
+}
+footer .container .row .brand h5 {
+  font-weight: 700;
+  font-size: var(--s-subheading);
+  color: var(--primaryColor);
+  text-align: center;
+  letter-spacing: 1px;
+}
+footer .container .row .brand p {
+  font-weight: 400;
+  font-size: 16px;
+  color: var(--primaryColor);
+  text-align: center;
+}
+footer .container .row .brand a {
+  padding: 14px 24px;
+  background-color: var(--bg-btnSecondary);
+  color: #fff;
+  text-decoration: none;
+  border-radius: 30px;
+}
+footer .container .row .cta .avatar .avatar-wrapper img {
+  width: 104px;
+}
+
 #home .home .container {
   margin-top: 200px;
   display: flex;

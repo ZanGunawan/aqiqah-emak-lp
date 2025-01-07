@@ -5,6 +5,7 @@
         <!-- end navbar -->
 
         <nuxt />
+        <Footer />
     </main>
 </template>
 
