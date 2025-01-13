@@ -192,7 +192,6 @@ export default {
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
-  min-height: 90vh;
   /* max-height: max-content; */
   padding-block: 73px;
 }

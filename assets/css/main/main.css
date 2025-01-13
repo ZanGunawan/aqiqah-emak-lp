@@ -18,6 +18,14 @@
   --bg-hover-btnSecondary: #65bd06;
 }
 
+@media (max-width: 567px) {
+  :root {
+    --s-heading: 24px !important;
+    --s-subheading: 16px !important;
+    --s-btn: 14px;
+    --p-btn: 10px 15px;
+  }
+}
 nav .container button {
   border: none;
   background-color: transparent;
@@ -312,6 +320,12 @@ header .header .container .text-wrapper p {
 #home .home {
   display: flex;
   align-items: center;
+  min-height: 90vh;
+}
+@media (max-width: 567px) {
+  #home .home {
+    min-height: 70vh;
+  }
 }
 #home .home .container .text-wrapper {
   display: flex;

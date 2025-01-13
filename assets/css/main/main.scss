@@ -1,3 +1,23 @@
+@mixin respond-to($device) {
+  @if $device ==small {
+    @media (max-width: 567px) {
+      @content;
+    }
+  }
+
+  @else if $device ==medium {
+    @media (max-width: 768px) {
+      @content;
+    }
+  }
+
+  @else if $device ==big {
+    @media (max-width: 960px) {
+      @content
+    }
+  }
+}
+
 :root {
   --w-heading: 700;
   --w-subheading: 400;
@@ -25,23 +45,13 @@
   --bg-hover-btnSecondary: #65bd06;
 }
 
-@mixin respond-to($device) {
-  @if $device ==small {
-    @media (max-width: 567px) {
-      @content;
-    }
-  }
+@include respond-to(small) {
+  :root {
+    --s-heading: 24px !important;
+    --s-subheading: 16px !important;
+    --s-btn: 14px;
 
-  @else if $device ==medium {
-    @media (max-width: 768px) {
-      @content;
-    }
-  }
-
-  @else if $device ==big {
-    @media (max-width: 960px) {
-      @content
-    }
+    --p-btn: 10px 15px;
   }
 }
 
@@ -400,6 +410,11 @@ header {
   .home {
     display: flex;
     align-items: center;
+    min-height: 90vh;
+
+    @include respond-to(small) {
+      min-height: 70vh;
+    }
 
     .container {
       // margin-top: 200px;
