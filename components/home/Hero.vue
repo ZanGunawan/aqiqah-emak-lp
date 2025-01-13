@@ -1,24 +1,19 @@
 <template>
   <div id="home">
     <div class="home">
-      <div class="d-flex flex-column container">
-        <!-- <h1 class="text-center">Layanan Aqiqah dengan <transition name="fade">
-          <span :key="currentText" class="dynamic-part">{{ currentText }}</span>
-          </transition>
-        </h1> -->
-        <vue-typed-js :strings="['Beragam menu Olahan', 'Pelayanan Terbaik', 'Rasa dan Pengiriman Terpercaya']"
-            :type-speed="50"
-            :back-speed="30"
-            :back-delay="2000"
-            :loop="true">
-          <h1 class="text-center">Layanan Aqiqah dengan
-          <span class="typing"></span>
-          </h1>
-        </vue-typed-js>
-        <p class="text-center">Pesan mudah, layanan cepat 24 jam siap dikirim sesuai request anda!</p>
-        <div class="cta d-flex align-items-center gap-4">
-          <a href="#" class="btn text-capitalize">send message</a>
-          <a href="#" class="text-capitalize"><i class="bi bi-play-btn me-2"></i>our documentation</a>
+      <div class="container">
+        <div class="text-wrapper">
+          <vue-typed-js :strings="['Beragam menu Olahan', 'Pelayanan Terbaik', 'Rasa dan Pengiriman Terpercaya']"
+            :type-speed="50" :back-speed="30" :back-delay="2000" :loop="true">
+            <h1 class="text-center">Layanan Aqiqah dengan
+              <span class="typing"></span>
+            </h1>
+          </vue-typed-js>
+          <p class="text-center">Pesan mudah, layanan cepat 24 jam siap dikirim sesuai request anda!</p>
+          <div class="cta d-flex align-items-center gap-4">
+            <a href="#" class="btn text-capitalize">send message</a>
+            <a href="#" class="text-capitalize"><i class="bi bi-play-btn me-2"></i>our documentation</a>
+          </div>
         </div>
       </div>
     </div>
@@ -89,7 +84,8 @@
               <h4 class="text-capitalize text-center mb-1">{{ data.name }}</h4>
               <p class="text-center">{{ data.date }}</p>
               <div class="star-wrapper mb-3">
-                <span class="text-center"><i class="bi bi-star-fill me-1" v-for="(value, i) in data.star" :key="i"></i></span>
+                <span class="text-center"><i class="bi bi-star-fill me-1" v-for="(value, i) in data.star"
+                    :key="i"></i></span>
               </div>
               <div class="image-wrapper">
                 <img :src="data.src" :alt="data.alt">
@@ -176,11 +172,16 @@ export default {
   display: inline-block;
 }
 
-.fade-enter-active, .fade-leave-active {
+.fade-enter-active,
+.fade-leave-active {
   transition: opacity 1s ease-in-out;
 }
 
-.fade-enter, .fade-leave-to /* .fade-leave-active in <2.1.8 */ {
+.fade-enter,
+.fade-leave-to
+
+/* .fade-leave-active in <2.1.8 */
+  {
   opacity: 0;
 }
 
@@ -190,9 +191,10 @@ export default {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  height: auto;
-  min-height: 761px;
-  padding-top: 73px;
+  background-attachment: fixed;
+  min-height: 90vh;
+  /* max-height: max-content; */
+  padding-block: 73px;
 }
 
 .cta-section {

@@ -6,25 +6,54 @@
                 <img v-if="isNavbarVisible" src="~/assets/img/path18.png" alt="" height="40">
                 <img v-else src="~/assets/img/path6.png" alt="" height="40">
             </nuxt-link>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+            <button @click="openNavbar" v-if="isNavbarVisible">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <!-- <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
                 aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="link-container" id="navbarSupportedContent">
+            </button> -->
+            <div class="link-container">
                 <ul class="ms-auto me-3 mb-2 mb-lg-0">
                     <li class="">
-                        <nuxt-link to="/about" class="fw-light" :class="isNavbarVisible ? 'text-dark' : 'text-white'" >Tentang Kami</nuxt-link>
+                        <nuxt-link to="/about" class="fw-light"
+                            :class="isNavbarVisible ? 'text-dark' : 'text-white'">Tentang Kami</nuxt-link>
                     </li>
                     <li class="">
-                      <nuxt-link to="/layanan" class="fw-light" :class="isNavbarVisible ? 'text-dark' : 'text-white'">Layanan</nuxt-link>
+                        <nuxt-link to="/layanan" class="fw-light"
+                            :class="isNavbarVisible ? 'text-dark' : 'text-white'">Layanan</nuxt-link>
                     </li>
                     <!-- <li class="">
                       <a class="fw-light" :class="isNavbarVisible ? 'text-dark' : 'text-white'" aria-current="page"
                       href="#">Testimoni</a>
                     </li> -->
                     <li class="">
-                      <nuxt-link to="/galery" class="fw-light" :class="isNavbarVisible ? 'text-dark' : 'text-white'">Galeri</nuxt-link>
+                        <nuxt-link to="/galery" class="fw-light"
+                            :class="isNavbarVisible ? 'text-dark' : 'text-white'">Galeri</nuxt-link>
+                    </li>
+                    <li class="">
+                        <a class="btn rounded-pill text-dark" aria-current="page" href="#">Hubungi Kami</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="link-phone-container" v-if="isNavbarVisible">
+                <ul class="" v-if="isNavbarOpen">
+                    <li class="">
+                        <nuxt-link to="/about" class="fw-light"
+                            :class="isNavbarVisible ? 'text-dark' : 'text-white'">Tentang Kami</nuxt-link>
+                    </li>
+                    <li class="">
+                        <nuxt-link to="/layanan" class="fw-light"
+                            :class="isNavbarVisible ? 'text-dark' : 'text-white'">Layanan</nuxt-link>
+                    </li>
+                    <!-- <li class="">
+                      <a class="fw-light" :class="isNavbarVisible ? 'text-dark' : 'text-white'" aria-current="page"
+                      href="#">Testimoni</a>
+                    </li> -->
+                    <li class="">
+                        <nuxt-link to="/galery" class="fw-light"
+                            :class="isNavbarVisible ? 'text-dark' : 'text-white'">Galeri</nuxt-link>
                     </li>
                     <li class="">
                         <a class="btn rounded-pill text-dark" aria-current="page" href="#">Hubungi Kami</a>
@@ -40,7 +69,8 @@ export default {
     data() {
         return {
             isNavbarVisible: false, // Status visibilitas navbar
-            isNavbarRelative: false
+            isNavbarRelative: false,
+            isNavbarOpen: false,
         };
     },
     mounted() {
@@ -50,6 +80,10 @@ export default {
         window.removeEventListener("scroll", this.handelScroll);
     },
     methods: {
+        openNavbar() {
+            this.isNavbarOpen = !this.isNavbarOpen
+            console.log(this.isNavbarOpen)
+        },
         handelScroll() {
             if (window.scrollY > 400) {
                 this.isNavbarVisible = true;
@@ -99,4 +133,6 @@ export default {
     /* Navbar muncul */
     /* Navbar muncul di posisi atas */
 }
+
+/* .navbar-open {} */
 </style>
