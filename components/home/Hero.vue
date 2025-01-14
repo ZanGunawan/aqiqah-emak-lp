@@ -204,7 +204,6 @@ export default {
   background-position: center;
   width: 100%;
   height: auto;
-  min-height: 761px;
 }
 
 .service {
@@ -212,11 +211,5 @@ export default {
   border-top-right-radius: 50% 50px;
   margin-top: -50px;
   padding-block: 70px;
-}
-
-@media (max-width: 576px) {
-  .home {
-    height: 404px;
-  }
 }
 </style>
