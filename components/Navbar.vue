@@ -65,12 +65,12 @@
 </template>
 
 <script>
+import { mapGetters } from 'vuex'
 export default {
     data() {
         return {
             isNavbarVisible: false, // Status visibilitas navbar
             isNavbarRelative: false,
-            isNavbarOpen: false,
         };
     },
     mounted() {
@@ -79,10 +79,20 @@ export default {
     beforeDestroy() {
         window.removeEventListener("scroll", this.handelScroll);
     },
+    computed: {
+        ...mapGetters(['isNavbar']),
+        isNavbarOpen: {
+            get() {
+                return this.isNavbar
+            },
+            set(value) {
+                this.$store.commit('SET_NAVBAR', value)
+            }
+        }
+    },
     methods: {
         openNavbar() {
             this.isNavbarOpen = !this.isNavbarOpen
-            console.log(this.isNavbarOpen)
         },
         handelScroll() {
             if (window.scrollY > 400) {
@@ -91,6 +101,7 @@ export default {
             } else if (window.scrollY > 73 && window.scrollY < 400) {
                 this.isNavbarRelative = true
                 this.isNavbarVisible = false
+                this.isNavbarOpen = false
             } else if (window.scrollY < 73) {
                 this.isNavbarVisible = false;
                 this.isNavbarRelative = false

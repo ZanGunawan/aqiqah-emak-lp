@@ -3,6 +3,7 @@
         <!-- navbar -->
         <LoadingOverlay />
         <Navbar />
+        <Overlay />
         <!-- end navbar -->
 
         <nuxt />

@@ -18,15 +18,15 @@
             </div>
           </div>
           <div class="row">
-            <div class="col-12 col-md-7 d-flex align-items-center">
+            <div class="col-12 col-md-7 d-flex align-items-center order-2 order-md-1">
               <div class="text-wrapper">
                 <h2>Misi Kami</h2>
                 <p>Menyediakan layanan aqiqah yang mudah diakses dengan bahan berkualitas, serta memberikan pengalaman
                   yang memuaskan bagi pelanggan.</p>
               </div>
             </div>
-            <div class="col-12 col-md-5">
-              <div class="image-wrapper d-flex justify-content-end">
+            <div class="col-12 col-md-5 order-1 order-md-2s">
+              <div class="image-wrapper d-flex justify-content-center justify-content-md-end">
                 <img src="~/assets/img/about/2.jpg" alt="tentang aqiqah emak">
               </div>
             </div>

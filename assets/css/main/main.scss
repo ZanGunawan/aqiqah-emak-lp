@@ -402,6 +402,10 @@ header {
     display: flex;
     align-items: center;
 
+    @include respond-to(medium) {
+      min-height: calc(30vh + 73px + 73px);
+    }
+
     .container {
       .text-wrapper {
         h1 {
@@ -837,6 +841,10 @@ header {
     .visi-wrapper {
       padding-block: 90px 120px;
 
+      @include respond-to(medium) {
+        padding-block: 50px 30px;
+      }
+
       .container {
         margin-bottom: 70px;
 
@@ -847,6 +855,16 @@ header {
               max-width: 360px;
               border-radius: 20px;
               box-shadow: 0 1px 15px #000;
+
+              @include respond-to(medium) {
+                max-width: 260px;
+                margin-bottom: 30px;
+              }
+            }
+
+            @include respond-to(medium) {
+              display: flex;
+              justify-content: center;
             }
           }
 
@@ -860,6 +878,19 @@ header {
               font-weight: 400;
               font-size: 24px;
               line-height: 30.5px;
+            }
+
+            @include respond-to(medium) {
+              h2 {
+                font-size: 24px;
+                text-align: center;
+              }
+
+              p {
+                font-size: 16px;
+                text-align: center;
+                line-height: 18.24px;
+              }
             }
           }
         }
@@ -885,6 +916,12 @@ header {
             grid-template-columns: repeat(4, 1fr);
             justify-content: center;
             list-style: none;
+            padding: 0 !important;
+
+            @include respond-to(medium) {
+              grid-template-columns: repeat(1, 1fr);
+              gap: 20px;
+            }
 
             li {
               display: flex;
@@ -897,6 +934,7 @@ header {
                 color: var(--primaryColor);
                 font-weight: 700;
                 font-size: 24px;
+                text-align: center;
               }
             }
           }
@@ -913,7 +951,7 @@ header {
     .container {
       .container-menu {
         display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+        grid-template-columns: var(--grid-columns);
         gap: 30px;
 
         .box-menu {
@@ -923,23 +961,22 @@ header {
           box-shadow: 0 0 24px #00000040;
 
           .image-wrapper {
-            height: 346px;
+            height: max-content;
+            max-height: 300px;
             overflow: hidden;
             position: relative;
 
             img {
-              position: absolute;
-              max-width: 100%;
+              position: relative;
+              width: 100%;
               height: auto;
-              top: -50px;
-              left: 0;
-              // transform: translateY(-20%);
-              transition: all 0.3s ease-in-out;
+              transform: translateY(-25%);
+              transition: transform 0.3s ease-in-out;
 
               &:hover {
-                // transform: translateY(20%);
+                transform: translateY(-50%);
                 transform: scale(1.15);
-                transition: all 0.3s ease-in-out;
+                transition: transform 0.3s ease-in-out;
               }
             }
           }
@@ -1001,7 +1038,7 @@ header {
     .container {
       .image-wrapper {
         display: grid;
-        grid-template-columns: repeat(3, 1fr);
+        grid-template-columns: var(--grid-columns);
         gap: 30px;
 
         .image-box {
